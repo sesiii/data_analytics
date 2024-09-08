@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1ts3CHJc7ww-Pf-Q-Ge3gshgm5erwZO0m
 """
 
-
+# Data Analytics Assignment-1
 
 import pandas as pd
 import numpy as np
@@ -19,7 +19,7 @@ df=pd.read_csv('content/Dataset - missing_values-SalaryData_Train.csv')
 
 df.head()
 
-"""# EDA"""
+"""# EDA Part-A of Assignment"""
 
 df.info()
 
@@ -27,13 +27,13 @@ df.shape
 
 df.isnull().sum()
 
-# prompt:  drop all the rows with nan value
+#  drop all the rows with nan value
 
 df.dropna(inplace=True)
 
 df['education'].unique()
 
-# prompt: do label encoding of education column
+# do label encoding of education column
 
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
@@ -42,28 +42,28 @@ df.head()
 
 df['sex'].unique()
 
-# prompt: do label encoding of sex column
+# do label encoding of sex column
 
 df['sex'] = le.fit_transform(df['sex'])
 df.head()
 
 df['race'].unique()
 
-# prompt: do label encoding of race column
+# do label encoding of race column
 
 df['race'] = le.fit_transform(df['race'])
 df.head()
 
 df.info()
 
-# prompt: do label encoding of relationship column
+#  do label encoding of relationship column
 
 df['relationship'].unique()
 
 df['relationship'] = le.fit_transform(df['relationship'])
 df.head()
 
-# prompt: do frequency encoding of native column
+#  do frequency encoding of native column
 
 # Calculate the frequency of each category in the 'native' column
 freq_map = df['native'].value_counts(normalize=True).to_dict()
@@ -73,7 +73,7 @@ df['native_freq_encoded'] = df['native'].map(freq_map)
 
 df.head()
 
-# prompt: do frequency encoding of workclass column
+# do frequency encoding of workclass column
 
 # Calculate the frequency of each category in the 'workclass' column
 freq_map = df['workclass'].value_counts(normalize=True).to_dict()
@@ -83,7 +83,7 @@ df['workclass_freq_encoded'] = df['workclass'].map(freq_map)
 
 df.head()
 
-# prompt: do frequency encoding of occupation column
+# do frequency encoding of occupation column
 
 # Calculate the frequency of each category in the 'occupation' column
 freq_map = df['occupation'].value_counts(normalize=True).to_dict()
@@ -95,25 +95,24 @@ df.head()
 
 import re
 
-# Assuming 'df' is your DataFrame and 'Possibility' is the column name
 df['Possibility'] = df['Possibility'].replace({'<=0.5': '0'}, regex=True)
 df['Possibility'] = df['Possibility'].replace({'>0.5': '1'}, regex=True)
 
 df.head()
 
-# prompt: convert the datatpye of Possibility column to float
+#  convert the datatpye of Possibility column to float
 
 # Convert 'Possibility' column to float
 df['Possibility'] = df['Possibility'].astype(float)
 
-# prompt: do label encoding of maritalstatus column
+# do label encoding of maritalstatus column
 
 df['maritalstatus'] = le.fit_transform(df['maritalstatus'])
 df.head()
 
 df.info()
 
-# prompt: remove all the columns with dtype as object
+# remove all the columns with dtype as object
 
 # Select columns with data type other than object
 df = df.select_dtypes(exclude=['object'])
@@ -122,7 +121,7 @@ df.head()
 
 df.info()
 
-# prompt: do univariate analsys of this df
+#  do univariate analsys of this df
 
 # Univariate analysis for numerical features
 df.describe()
@@ -135,7 +134,7 @@ plt.show()
 df.boxplot(figsize=(15, 10))
 plt.show()
 
-# prompt: make a correlation matrix
+#  make a correlation matrix
 
 # Correlation matrix
 corr_matrix = df.corr()
@@ -145,7 +144,7 @@ plt.figure(figsize=(15, 10))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.show()
 
-# prompt: plot pie charts for the  columns education
+# plot pie charts for the  columns education
 # maritalstatus
 # relationship
 # race
@@ -188,7 +187,7 @@ plt.title('Occupation Frequency Encoded')
 plt.tight_layout()
 plt.show()
 
-# prompt: give density plots of maritalstatus
+# give density plots of maritalstatus
 # relationship
 #  race
 #  sex
@@ -230,7 +229,7 @@ plt.title('Occupation Frequency Encoded')
 plt.tight_layout()
 plt.show()
 
-# prompt:  Perform an Exploratory Data Analysis (EDA) on the dataset. EDA may include
+# Perform an Exploratory Data Analysis (EDA) on the dataset. EDA may include
 #  frequency distribution, and multivariate correlation analysis, as well as basic
 #  data visualization
 
@@ -255,83 +254,56 @@ df_copy=df.copy()
 
 
 
-"""# Naive Bayes model (Part-B)"""
-
-# prompt:  Implement Naive Bayes model on the given dataset without relying on any machine
-#  learning libraries (e.g., sklearn). Your task is to code the Naive Bayes algorithm from
-#  scratch to classify individuals as either criminal(Possibility=1) or innocent(Possibility=0). You may use basic packages
-#  such as numpy, pandas, and math.
+"""# Naive Bayes model (Part-B) of Assignment"""
 
 import pandas as pd
 import numpy as np
 import math
 
 def calculate_prior_probability(df, target_variable):
-  """
-  Calculates the prior probability of each class in the target variable.
+    class_counts = df[target_variable].value_counts()
+    total_samples = len(df)
+    prior_probabilities = {cls: count / total_samples for cls, count in class_counts.items()}
+    return prior_probabilities
 
-  Args:
-    df: Pandas DataFrame.
-    target_variable: Name of the target variable column.
+def calculate_likelihood(df, feature, feature_value, target_variable, target_class, alpha=1):
+    """
+    Calculates the likelihood with Laplace smoothing.
 
-  Returns:
-    A dictionary containing the prior probabilities for each class.
-  """
-  class_counts = df[target_variable].value_counts()
-  total_samples = len(df)
-  prior_probabilities = {cls: count / total_samples for cls, count in class_counts.items()}
-  return prior_probabilities
+    Args:
+        df: Pandas DataFrame.
+        feature: Name of the feature column.
+        feature_value: Value of the feature.
+        target_variable: Name of the target variable column.
+        target_class: Target class value.
+        alpha: Laplace smoothing parameter (default 1).
 
+    Returns:
+        The likelihood of the feature value given the target class.
+    """
+    filtered_df = df[df[target_variable] == target_class]
+    feature_class_count = len(filtered_df[filtered_df[feature] == feature_value])
+    total_class_count = len(filtered_df)
 
-def calculate_likelihood(df, feature, feature_value, target_variable, target_class):
-  """
-  Calculates the likelihood of a feature value given a target class.
-
-  Args:
-    df: Pandas DataFrame.
-    feature: Name of the feature column.
-    feature_value: Value of the feature.
-    target_variable: Name of the target variable column.
-    target_class: Target class value.
-
-  Returns:
-    The likelihood of the feature value given the target class.
-  """
-  filtered_df = df[(df[target_variable] == target_class) & (df[feature] == feature_value)]
-  count = len(filtered_df)
-  total_count = len(df[df[target_variable] == target_class])
-  likelihood = count / total_count
-  return likelihood
-
+    # Apply Laplace smoothing
+    likelihood = (feature_class_count + alpha) / (total_class_count + alpha * len(df[feature].unique()))
+    return likelihood
 
 def naive_bayes_predict(df, features, target_variable, new_data_point):
-  """
-  Predicts the target class for a new data point using Naive Bayes.
+    prior_probabilities = calculate_prior_probability(df, target_variable)
+    classes = df[target_variable].unique()
+    predictions = {}
 
-  Args:
-    df: Pandas DataFrame.
-    features: List of feature column names.
-    target_variable: Name of the target variable column.
-    new_data_point: A dictionary containing the feature values for the new data point.
+    for cls in classes:
+        posterior_probability = prior_probabilities[cls]
+        for feature in features:
+            feature_value = new_data_point[feature]
+            likelihood = calculate_likelihood(df, feature, feature_value, target_variable, cls)
+            posterior_probability *= likelihood
+        predictions[cls] = posterior_probability
 
-  Returns:
-    The predicted class for the new data point.
-  """
-  prior_probabilities = calculate_prior_probability(df, target_variable)
-  classes = df[target_variable].unique()
-  predictions = {}
-
-  for cls in classes:
-    posterior_probability = prior_probabilities[cls]
-    for feature in features:
-      feature_value = new_data_point[feature]
-      likelihood = calculate_likelihood(df, feature, feature_value, target_variable, cls)
-      posterior_probability *= likelihood
-    predictions[cls] = posterior_probability
-
-  predicted_class = max(predictions, key=predictions.get)
-  return predicted_class
-
+    predicted_class = max(predictions, key=predictions.get)
+    return predicted_class
 
 # Select features and target variable
 features = df.columns[:-1].tolist()  # Exclude the last column ('Possibility')
@@ -344,7 +316,7 @@ new_data_point = {
     'age': 30,
     'workclass_freq_encoded': 0.5,
     'education': 1,
-    'educationno':5.0,
+    'educationno': 5.0,
     'maritalstatus': 1,
     'occupation_freq_encoded': 0.3,
     'relationship': 1,
@@ -359,7 +331,7 @@ new_data_point = {
 predicted_class = naive_bayes_predict(df, features, target_variable, new_data_point)
 print(f"Predicted class for the new data point: {predicted_class}")
 
-# prompt: make a train and test set and check the accuracy of the above naive bayes model
+# make a train and test set and check the accuracy of the above naive bayes model
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
@@ -383,9 +355,9 @@ for index, row in X_test.iterrows():
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy of the Naive Bayes model: {accuracy}")
 
-"""# Part-C"""
+"""# Part-C of Assignment"""
 
-# prompt:  Now, implement Naive Bayes, SVM, Decision Tree, and KNN using the sklearn module
+# Now, implement Naive Bayes, SVM, Decision Tree, and KNN using the sklearn module
 #  to perform the classification task. Compare the performance of the sklearn Naive Bayes
 #  implementation with the custom Naive Bayes implementation
 
@@ -425,7 +397,13 @@ print(f"Accuracy of KNN model: {accuracy_knn}")
 # Compare with custom Naive Bayes
 print(f"Accuracy of Custom Naive Bayes model: {accuracy}")
 
-"""# Part-D"""
+# compare between custom accuracy and sklearn Naive Bayes Accuracy
+if accuracy > accuracy_gnb:
+    print("Custom Naive Bayes accuracy is more than Sklearn Naive Bayes.")
+else:
+    print("Sklearn Naive Bayes accuracy is more than Custom Naive Bayes.")
+
+"""# Part-D of Assignment"""
 
 import numpy as np
 from collections import Counter
@@ -489,15 +467,19 @@ accuracy_custom = accuracy  # Accuracy of custom Naive Bayes from Part B
 f1_score_custom = f1_score(y_test, y_pred)  # F1 score for custom Naive Bayes
 
 accuracy_gnb = accuracy_score(y_test, y_pred_gnb)
+# F1 score for Sklearn Naive Bayes
 f1_score_gnb = f1_score(y_test, y_pred_gnb)
 
 accuracy_svm = accuracy_score(y_test, y_pred_svm)
+#F1 score fro SVM
 f1_score_svm = f1_score(y_test, y_pred_svm)
 
 accuracy_dt = accuracy_score(y_test, y_pred_dt)
+#F1 Score fro Decison Tree
 f1_score_dt = f1_score(y_test, y_pred_dt)
 
 accuracy_knn = accuracy_score(y_test, y_pred_knn)
+#F1 Score fro kNN
 f1_score_knn = f1_score(y_test, y_pred_knn)
 
 # Model names and their corresponding accuracies and F1 scores
@@ -516,4 +498,3 @@ plt.ylabel('Models')
 plt.title('Comparison of Models')
 plt.legend()
 plt.show()
-
