@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 
-df=pd.read_csv('/content/Dataset - missing_values-SalaryData_Train.csv')
+df=pd.read_csv('content/Dataset - missing_values-SalaryData_Train.csv')
 
 df.head()
 
@@ -426,4 +426,94 @@ print(f"Accuracy of KNN model: {accuracy_knn}")
 print(f"Accuracy of Custom Naive Bayes model: {accuracy}")
 
 """# Part-D"""
+
+import numpy as np
+from collections import Counter
+from sklearn.metrics import accuracy_score, f1_score
+
+# Custom function to perform ensemble voting
+def ensemble_predict(X, classifiers):
+    predictions = []
+
+    for classifier in classifiers:
+        y_pred = classifier.predict(X)
+        predictions.append(y_pred)
+
+    # Transpose the predictions to align each instance's predictions from all classifiers
+    predictions = np.array(predictions).T
+
+    # Apply majority voting
+    final_predictions = []
+    for instance_preds in predictions:
+        majority_vote = Counter(instance_preds).most_common(1)[0][0]
+        final_predictions.append(majority_vote)
+
+    return np.array(final_predictions)
+
+# Wrapping the custom Naive Bayes model to fit into the ensemble
+class CustomNaiveBayesWrapper:
+    def predict(self, X):
+        y_pred = []
+        for _, row in X.iterrows():
+            new_data_point = row.to_dict()
+            predicted_class = naive_bayes_predict(df_train, features, target_variable, new_data_point)
+            y_pred.append(predicted_class)
+        return np.array(y_pred)
+
+custom_nb = CustomNaiveBayesWrapper()
+
+# Train sklearn models
+svm = SVC()
+dt = DecisionTreeClassifier()
+knn = KNeighborsClassifier()
+
+svm.fit(X_train, y_train)
+dt.fit(X_train, y_train)
+knn.fit(X_train, y_train)
+
+# Create a list of all classifiers
+classifiers = [svm, dt, knn, custom_nb]
+
+# Use the ensemble model to predict on the test set
+y_pred_ensemble = ensemble_predict(X_test, classifiers)
+
+# Evaluate the ensemble model
+accuracy_ensemble = accuracy_score(y_test, y_pred_ensemble)
+f1_score_ensemble = f1_score(y_test, y_pred_ensemble)
+
+print(f"Accuracy of Ensemble model: {accuracy_ensemble}")
+print(f"F1 Score of Ensemble model: {f1_score_ensemble}")
+
+# Collect all model accuracies and F1 scores for comparison
+accuracy_custom = accuracy  # Accuracy of custom Naive Bayes from Part B
+f1_score_custom = f1_score(y_test, y_pred)  # F1 score for custom Naive Bayes
+
+accuracy_gnb = accuracy_score(y_test, y_pred_gnb)
+f1_score_gnb = f1_score(y_test, y_pred_gnb)
+
+accuracy_svm = accuracy_score(y_test, y_pred_svm)
+f1_score_svm = f1_score(y_test, y_pred_svm)
+
+accuracy_dt = accuracy_score(y_test, y_pred_dt)
+f1_score_dt = f1_score(y_test, y_pred_dt)
+
+accuracy_knn = accuracy_score(y_test, y_pred_knn)
+f1_score_knn = f1_score(y_test, y_pred_knn)
+
+# Model names and their corresponding accuracies and F1 scores
+model_names = ['Custom Naive Bayes', 'Sklearn Naive Bayes', 'SVM', 'Decision Tree', 'KNN', 'Ensemble']
+accuracies = [accuracy_custom, accuracy_gnb, accuracy_svm, accuracy_dt, accuracy_knn, accuracy_ensemble]
+f1_scores = [f1_score_custom, f1_score_gnb, f1_score_svm, f1_score_dt, f1_score_knn, f1_score_ensemble]
+
+# Plotting the comparison
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.barh(model_names, accuracies, color='skyblue', label='Accuracy')
+plt.barh(model_names, f1_scores, color='orange', alpha=0.5, label='F1 Score')
+plt.xlabel('Scores')
+plt.ylabel('Models')
+plt.title('Comparison of Models')
+plt.legend()
+plt.show()
 
