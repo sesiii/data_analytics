@@ -1,0 +1,203 @@
+Frequency distribution for age:
+age
+31    817
+36    810
+33    804
+34    798
+35    796
+     ... 
+82      7
+83      5
+88      3
+85      3
+86      1
+Name: count, Length: 72, dtype: int64
+
+Frequency distribution for education:
+education
+11    9394
+15    6388
+9     4833
+12    1544
+8     1246
+1     1003
+7      974
+0      787
+5      529
+14     515
+6      435
+2      364
+10     358
+4      275
+3      145
+13      42
+Name: count, dtype: int64
+
+Frequency distribution for educationno:
+educationno
+9     9394
+10    6388
+13    4833
+14    1544
+11    1246
+7     1003
+12     974
+6      787
+4      529
+15     515
+5      435
+8      364
+16     358
+3      275
+2      145
+1       42
+Name: count, dtype: int64
+
+Frequency distribution for maritalstatus:
+maritalstatus
+2    13453
+4     9264
+0     4052
+5      895
+6      794
+3      354
+1       20
+Name: count, dtype: int64
+
+Frequency distribution for relationship:
+relationship
+0    11921
+1     7383
+3     4246
+4     3080
+5     1342
+2      860
+Name: count, dtype: int64
+
+Frequency distribution for race:
+race
+4    24781
+2     2689
+1      866
+0      273
+3      223
+Name: count, dtype: int64
+
+Frequency distribution for sex:
+sex
+1    19481
+0     9351
+Name: count, dtype: int64
+
+Frequency distribution for capitalgain:
+capitalgain
+0        26402
+15024      323
+7688       260
+7298       228
+99999      144
+         ...  
+1639         1
+6097         1
+401          1
+1455         1
+1086         1
+Name: count, Length: 118, dtype: int64
+
+Frequency distribution for capitalloss:
+capitalloss
+0       27465
+1902      187
+1977      153
+1887      147
+1848       46
+        ...  
+2080        1
+4356        1
+1539        1
+1844        1
+1411        1
+
+
+
+# give density plots of maritalstatus
+# relationship
+#  race
+#  sex
+#  native_freq_encoded
+#  workclass_freq_encoded
+#  occupation_freq_encoded
+
+# Density plots for selected features
+plt.figure(figsize=(15, 10))
+
+plt.subplot(3, 3, 1)
+sns.kdeplot(df['maritalstatus'], shade=True)
+plt.title('Marital Status')
+
+plt.subplot(3, 3, 2)
+sns.kdeplot(df['relationship'], shade=True)
+plt.title('Relationship')
+
+plt.subplot(3, 3, 3)
+sns.kdeplot(df['race'], shade=True)
+plt.title('Race')
+
+plt.subplot(3, 3, 4)
+sns.kdeplot(df['sex'], shade=True)
+plt.title('Sex')
+
+plt.subplot(3, 3, 5)
+sns.kdeplot(df['native_freq_encoded'], shade=True)
+plt.title('Native Frequency Encoded')
+
+plt.subplot(3, 3, 6)
+sns.kdeplot(df['workclass_freq_encoded'], shade=True)
+plt.title('Workclass Frequency Encoded')
+
+plt.subplot(3, 3, 7)
+sns.kdeplot(df['occupation_freq_encoded'], shade=True)
+plt.title('Occupation Frequency Encoded')
+
+plt.tight_layout()
+plt.show()
+
+
+##add density plots
+
+
+
+
+
+
+
+
+
+
+
+
+df.shape
+(30161, 14)
+
+df.isnull().sum()
+age 	0
+workclass 	0
+education 	0
+educationno 	0
+maritalstatus 	200
+occupation 	0
+relationship 	0
+race 	681
+sex 	342
+capitalgain 	0
+capitalloss 	0
+hoursperweek 	466
+native 	0
+Possibility 	0
+
+
+
+
+
+
+
