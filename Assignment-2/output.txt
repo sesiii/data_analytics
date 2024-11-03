@@ -1,0 +1,1942 @@
+Sample transactions: [{'margarine', 'citrus fruit', 'semi-finished bread', 'ready soups'}, {'yogurt', 'coffee', 'tropical fruit'}, {'whole milk'}, {'meat spreads', 'pip fruit', 'cream cheese ', 'yogurt'}, {'whole milk', 'long life bakery product', 'other vegetables', 'condensed milk'}]
+Unique items: {'flower (seeds)', 'meat spreads', 'kitchen towels', 'jam', 'soda', 'zwieback', 'pasta', 'pip fruit', 'frozen meals', 'canned fruit', 'pickled vegetables', 'margarine', 'frankfurter', 'brandy', 'instant coffee', 'candy', 'dessert', 'sauces', 'salty snack', 'citrus fruit', 'other vegetables', 'house keeping products', 'root vegetables', 'syrup', 'seasonal products', 'specialty cheese', 'mustard', 'chewing gum', 'fish', 'bottled water', 'ham', 'hard cheese', 'dog food', 'spread cheese', 'chicken', 'soups', 'light bulbs', 'chocolate', 'butter milk', 'canned vegetables', 'meat', 'domestic eggs', 'sausage', 'frozen potato products', 'flower soil/fertilizer', 'frozen dessert', 'liquor (appetizer)', 'rum', 'male cosmetics', 'make up remover', 'rolls/buns', 'canned fish', 'pork', 'spices', 'photo/film', 'butter', 'yogurt', 'sliced cheese', 'flour', 'cocoa drinks', 'soap', 'fruit/vegetable juice', 'vinegar', 'semi-finished bread', 'dish cleaner', 'softener', 'female sanitary products', 'soft cheese', 'curd cheese', 'specialty chocolate', 'red/blush wine', 'ketchup', 'dental care', 'ice cream', 'white wine', 'whole milk', 'coffee', 'abrasive cleaner', 'turkey', 'grapes', 'frozen chicken', 'condensed milk', 'skin care', 'liver loaf', 'honey', 'mayonnaise', 'cling film/bags', 'tropical fruit', 'pastry', 'pot plants', 'beef', 'tea', 'artif. sweetener', 'canned beer', 'cake bar', 'finished products', 'newspapers', 'specialty fat', 'roll products ', 'processed cheese', 'UHT-milk', 'baby cosmetics', 'Instant food products', 'cookware', 'berries', 'salad dressing', 'long life bakery product', 'cleaner', 'potato products', 'shopping bags', 'napkins', 'brown bread', 'candles', 'waffles', 'prosecco', 'pet care', 'sparkling wine', 'cat food', 'cream cheese ', 'chocolate marshmallow', 'white bread', 'bathroom cleaner', 'onions', 'hamburger meat', 'baking powder', 'sweet spreads', 'beverages', 'whipped/sour cream', 'misc. beverages', 'specialty bar', 'frozen vegetables', 'liquor', 'ready soups', 'salt', 'rice', 'packaged fruit/vegetables', 'snack products', 'popcorn', 'oil', 'detergent', 'rubbing alcohol', 'sugar', 'frozen fish', 'bottled beer', 'herbs', 'hair spray', 'hygiene articles', 'curd', 'dishes', 'nut snack', 'cereals', 'organic products'}
+Number of unique items: 152
+Number of 1s in each row:
+ 0      4
+1      3
+2      1
+3      4
+4      4
+      ..
+695    5
+696    7
+697    7
+698    5
+699    4
+Length: 700, dtype: int64
+
+Enter the minimum support (e.g., 0.01): 0.01
+
+Frequent Itemsets and Support Values:
+{'margarine'}: Support Value: 0.0514
+{'citrus fruit'}: Support Value: 0.0929
+{'semi-finished bread'}: Support Value: 0.0114
+{'yogurt'}: Support Value: 0.1157
+{'coffee'}: Support Value: 0.0671
+{'tropical fruit'}: Support Value: 0.0929
+{'whole milk'}: Support Value: 0.2514
+{'pip fruit'}: Support Value: 0.0457
+{'cream cheese '}: Support Value: 0.0357
+{'other vegetables'}: Support Value: 0.1843
+{'long life bakery product'}: Support Value: 0.0229
+{'butter'}: Support Value: 0.0400
+{'rolls/buns'}: Support Value: 0.2186
+{'liquor (appetizer)'}: Support Value: 0.0114
+{'UHT-milk'}: Support Value: 0.0200
+{'bottled beer'}: Support Value: 0.0643
+{'cereals'}: Support Value: 0.0114
+{'bottled water'}: Support Value: 0.1371
+{'chocolate'}: Support Value: 0.0300
+{'white bread'}: Support Value: 0.0271
+{'flour'}: Support Value: 0.0129
+{'curd'}: Support Value: 0.0743
+{'dishes'}: Support Value: 0.0171
+{'beef'}: Support Value: 0.0600
+{'soda'}: Support Value: 0.1600
+{'frankfurter'}: Support Value: 0.0686
+{'chicken'}: Support Value: 0.0186
+{'fruit/vegetable juice'}: Support Value: 0.0657
+{'newspapers'}: Support Value: 0.0729
+{'sugar'}: Support Value: 0.0400
+{'packaged fruit/vegetables'}: Support Value: 0.0243
+{'specialty bar'}: Support Value: 0.0271
+{'butter milk'}: Support Value: 0.0329
+{'pastry'}: Support Value: 0.0771
+{'processed cheese'}: Support Value: 0.0114
+{'detergent'}: Support Value: 0.0300
+{'candy'}: Support Value: 0.0271
+{'salty snack'}: Support Value: 0.0343
+{'root vegetables'}: Support Value: 0.1014
+{'frozen dessert'}: Support Value: 0.0143
+{'waffles'}: Support Value: 0.0257
+{'canned beer'}: Support Value: 0.0786
+{'sausage'}: Support Value: 0.0814
+{'shopping bags'}: Support Value: 0.0700
+{'brown bread'}: Support Value: 0.0486
+{'beverages'}: Support Value: 0.0314
+{'spices'}: Support Value: 0.0100
+{'napkins'}: Support Value: 0.0414
+{'hamburger meat'}: Support Value: 0.0429
+{'hygiene articles'}: Support Value: 0.0471
+{'pork'}: Support Value: 0.0400
+{'berries'}: Support Value: 0.0400
+{'whipped/sour cream'}: Support Value: 0.0543
+{'grapes'}: Support Value: 0.0129
+{'dessert'}: Support Value: 0.0286
+{'domestic eggs'}: Support Value: 0.0443
+{'misc. beverages'}: Support Value: 0.0271
+{'hard cheese'}: Support Value: 0.0229
+{'cat food'}: Support Value: 0.0100
+{'ham'}: Support Value: 0.0229
+{'baking powder'}: Support Value: 0.0114
+{'pickled vegetables'}: Support Value: 0.0143
+{'chewing gum'}: Support Value: 0.0171
+{'oil'}: Support Value: 0.0286
+{'ice cream'}: Support Value: 0.0157
+{'canned fish'}: Support Value: 0.0129
+{'frozen vegetables'}: Support Value: 0.0429
+{'red/blush wine'}: Support Value: 0.0200
+{'frozen potato products'}: Support Value: 0.0100
+{'specialty chocolate'}: Support Value: 0.0143
+{'salt'}: Support Value: 0.0100
+{'frozen meals'}: Support Value: 0.0157
+{'onions'}: Support Value: 0.0257
+{'white wine'}: Support Value: 0.0171
+{'herbs'}: Support Value: 0.0171
+{'photo/film'}: Support Value: 0.0114
+{'sliced cheese'}: Support Value: 0.0243
+{'pasta'}: Support Value: 0.0157
+{'cling film/bags'}: Support Value: 0.0114
+{'cake bar'}: Support Value: 0.0100
+{'dish cleaner'}: Support Value: 0.0100
+{'meat'}: Support Value: 0.0214
+{'mustard'}: Support Value: 0.0100
+{'citrus fruit', 'margarine'}: Support Value: 0.0100
+{'whole milk', 'margarine'}: Support Value: 0.0257
+{'other vegetables', 'margarine'}: Support Value: 0.0186
+{'rolls/buns', 'margarine'}: Support Value: 0.0171
+{'citrus fruit', 'yogurt'}: Support Value: 0.0157
+{'citrus fruit', 'tropical fruit'}: Support Value: 0.0200
+{'citrus fruit', 'whole milk'}: Support Value: 0.0300
+{'citrus fruit', 'other vegetables'}: Support Value: 0.0271
+{'rolls/buns', 'citrus fruit'}: Support Value: 0.0271
+{'bottled water', 'citrus fruit'}: Support Value: 0.0157
+{'curd', 'citrus fruit'}: Support Value: 0.0143
+{'citrus fruit', 'beef'}: Support Value: 0.0157
+{'citrus fruit', 'soda'}: Support Value: 0.0129
+{'citrus fruit', 'fruit/vegetable juice'}: Support Value: 0.0129
+{'sugar', 'citrus fruit'}: Support Value: 0.0129
+{'citrus fruit', 'butter milk'}: Support Value: 0.0100
+{'root vegetables', 'citrus fruit'}: Support Value: 0.0143
+{'berries', 'citrus fruit'}: Support Value: 0.0100
+{'coffee', 'yogurt'}: Support Value: 0.0100
+{'tropical fruit', 'yogurt'}: Support Value: 0.0214
+{'whole milk', 'yogurt'}: Support Value: 0.0443
+{'other vegetables', 'yogurt'}: Support Value: 0.0314
+{'rolls/buns', 'yogurt'}: Support Value: 0.0314
+{'bottled water', 'yogurt'}: Support Value: 0.0300
+{'curd', 'yogurt'}: Support Value: 0.0243
+{'soda', 'yogurt'}: Support Value: 0.0257
+{'frankfurter', 'yogurt'}: Support Value: 0.0100
+{'fruit/vegetable juice', 'yogurt'}: Support Value: 0.0171
+{'pastry', 'yogurt'}: Support Value: 0.0114
+{'root vegetables', 'yogurt'}: Support Value: 0.0171
+{'sausage', 'yogurt'}: Support Value: 0.0214
+{'shopping bags', 'yogurt'}: Support Value: 0.0100
+{'brown bread', 'yogurt'}: Support Value: 0.0129
+{'napkins', 'yogurt'}: Support Value: 0.0100
+{'whipped/sour cream', 'yogurt'}: Support Value: 0.0100
+{'coffee', 'tropical fruit'}: Support Value: 0.0100
+{'whole milk', 'coffee'}: Support Value: 0.0186
+{'rolls/buns', 'coffee'}: Support Value: 0.0114
+{'sausage', 'coffee'}: Support Value: 0.0100
+{'shopping bags', 'coffee'}: Support Value: 0.0100
+{'whole milk', 'tropical fruit'}: Support Value: 0.0357
+{'pip fruit', 'tropical fruit'}: Support Value: 0.0114
+{'other vegetables', 'tropical fruit'}: Support Value: 0.0314
+{'rolls/buns', 'tropical fruit'}: Support Value: 0.0229
+{'bottled water', 'tropical fruit'}: Support Value: 0.0186
+{'curd', 'tropical fruit'}: Support Value: 0.0143
+{'soda', 'tropical fruit'}: Support Value: 0.0114
+{'frankfurter', 'tropical fruit'}: Support Value: 0.0100
+{'fruit/vegetable juice', 'tropical fruit'}: Support Value: 0.0100
+{'candy', 'tropical fruit'}: Support Value: 0.0114
+{'root vegetables', 'tropical fruit'}: Support Value: 0.0243
+{'shopping bags', 'tropical fruit'}: Support Value: 0.0100
+{'domestic eggs', 'tropical fruit'}: Support Value: 0.0129
+{'pip fruit', 'whole milk'}: Support Value: 0.0229
+{'cream cheese ', 'whole milk'}: Support Value: 0.0129
+{'other vegetables', 'whole milk'}: Support Value: 0.0643
+{'whole milk', 'butter'}: Support Value: 0.0171
+{'rolls/buns', 'whole milk'}: Support Value: 0.0643
+{'bottled beer', 'whole milk'}: Support Value: 0.0186
+{'cereals', 'whole milk'}: Support Value: 0.0100
+{'bottled water', 'whole milk'}: Support Value: 0.0343
+{'whole milk', 'chocolate'}: Support Value: 0.0114
+{'curd', 'whole milk'}: Support Value: 0.0314
+{'whole milk', 'beef'}: Support Value: 0.0229
+{'soda', 'whole milk'}: Support Value: 0.0386
+{'whole milk', 'frankfurter'}: Support Value: 0.0214
+{'whole milk', 'fruit/vegetable juice'}: Support Value: 0.0257
+{'whole milk', 'newspapers'}: Support Value: 0.0214
+{'sugar', 'whole milk'}: Support Value: 0.0171
+{'whole milk', 'packaged fruit/vegetables'}: Support Value: 0.0100
+{'whole milk', 'butter milk'}: Support Value: 0.0100
+{'pastry', 'whole milk'}: Support Value: 0.0229
+{'root vegetables', 'whole milk'}: Support Value: 0.0443
+{'frozen dessert', 'whole milk'}: Support Value: 0.0114
+{'whole milk', 'waffles'}: Support Value: 0.0129
+{'whole milk', 'sausage'}: Support Value: 0.0271
+{'shopping bags', 'whole milk'}: Support Value: 0.0143
+{'brown bread', 'whole milk'}: Support Value: 0.0186
+{'beverages', 'whole milk'}: Support Value: 0.0129
+{'napkins', 'whole milk'}: Support Value: 0.0143
+{'hamburger meat', 'whole milk'}: Support Value: 0.0200
+{'hygiene articles', 'whole milk'}: Support Value: 0.0157
+{'whole milk', 'pork'}: Support Value: 0.0186
+{'berries', 'whole milk'}: Support Value: 0.0129
+{'whipped/sour cream', 'whole milk'}: Support Value: 0.0243
+{'dessert', 'whole milk'}: Support Value: 0.0114
+{'domestic eggs', 'whole milk'}: Support Value: 0.0200
+{'whole milk', 'ham'}: Support Value: 0.0143
+{'whole milk', 'oil'}: Support Value: 0.0114
+{'whole milk', 'frozen vegetables'}: Support Value: 0.0171
+{'whole milk', 'sliced cheese'}: Support Value: 0.0114
+{'pip fruit', 'other vegetables'}: Support Value: 0.0114
+{'pip fruit', 'rolls/buns'}: Support Value: 0.0114
+{'pip fruit', 'curd'}: Support Value: 0.0100
+{'cream cheese ', 'other vegetables'}: Support Value: 0.0100
+{'other vegetables', 'butter'}: Support Value: 0.0100
+{'rolls/buns', 'other vegetables'}: Support Value: 0.0471
+{'bottled beer', 'other vegetables'}: Support Value: 0.0157
+{'bottled water', 'other vegetables'}: Support Value: 0.0371
+{'other vegetables', 'chocolate'}: Support Value: 0.0100
+{'curd', 'other vegetables'}: Support Value: 0.0214
+{'other vegetables', 'beef'}: Support Value: 0.0143
+{'soda', 'other vegetables'}: Support Value: 0.0314
+{'other vegetables', 'frankfurter'}: Support Value: 0.0100
+{'other vegetables', 'fruit/vegetable juice'}: Support Value: 0.0157
+{'sugar', 'other vegetables'}: Support Value: 0.0143
+{'other vegetables', 'butter milk'}: Support Value: 0.0100
+{'root vegetables', 'other vegetables'}: Support Value: 0.0429
+{'other vegetables', 'sausage'}: Support Value: 0.0143
+{'shopping bags', 'other vegetables'}: Support Value: 0.0171
+{'brown bread', 'other vegetables'}: Support Value: 0.0114
+{'napkins', 'other vegetables'}: Support Value: 0.0100
+{'hamburger meat', 'other vegetables'}: Support Value: 0.0143
+{'hygiene articles', 'other vegetables'}: Support Value: 0.0129
+{'other vegetables', 'pork'}: Support Value: 0.0157
+{'berries', 'other vegetables'}: Support Value: 0.0100
+{'whipped/sour cream', 'other vegetables'}: Support Value: 0.0200
+{'domestic eggs', 'other vegetables'}: Support Value: 0.0114
+{'other vegetables', 'ham'}: Support Value: 0.0100
+{'other vegetables', 'frozen vegetables'}: Support Value: 0.0143
+{'other vegetables', 'meat'}: Support Value: 0.0100
+{'rolls/buns', 'butter'}: Support Value: 0.0100
+{'bottled water', 'butter'}: Support Value: 0.0100
+{'root vegetables', 'butter'}: Support Value: 0.0129
+{'whipped/sour cream', 'butter'}: Support Value: 0.0100
+{'bottled beer', 'rolls/buns'}: Support Value: 0.0157
+{'bottled water', 'rolls/buns'}: Support Value: 0.0357
+{'rolls/buns', 'chocolate'}: Support Value: 0.0114
+{'curd', 'rolls/buns'}: Support Value: 0.0229
+{'rolls/buns', 'beef'}: Support Value: 0.0243
+{'rolls/buns', 'soda'}: Support Value: 0.0471
+{'rolls/buns', 'frankfurter'}: Support Value: 0.0343
+{'rolls/buns', 'fruit/vegetable juice'}: Support Value: 0.0171
+{'rolls/buns', 'newspapers'}: Support Value: 0.0200
+{'sugar', 'rolls/buns'}: Support Value: 0.0129
+{'rolls/buns', 'butter milk'}: Support Value: 0.0129
+{'rolls/buns', 'pastry'}: Support Value: 0.0243
+{'root vegetables', 'rolls/buns'}: Support Value: 0.0243
+{'rolls/buns', 'waffles'}: Support Value: 0.0100
+{'rolls/buns', 'canned beer'}: Support Value: 0.0157
+{'rolls/buns', 'sausage'}: Support Value: 0.0400
+{'shopping bags', 'rolls/buns'}: Support Value: 0.0186
+{'brown bread', 'rolls/buns'}: Support Value: 0.0100
+{'napkins', 'rolls/buns'}: Support Value: 0.0143
+{'hamburger meat', 'rolls/buns'}: Support Value: 0.0129
+{'hygiene articles', 'rolls/buns'}: Support Value: 0.0171
+{'whipped/sour cream', 'rolls/buns'}: Support Value: 0.0200
+{'domestic eggs', 'rolls/buns'}: Support Value: 0.0129
+{'rolls/buns', 'ham'}: Support Value: 0.0100
+{'rolls/buns', 'frozen vegetables'}: Support Value: 0.0129
+{'rolls/buns', 'sliced cheese'}: Support Value: 0.0143
+{'bottled beer', 'bottled water'}: Support Value: 0.0143
+{'bottled beer', 'soda'}: Support Value: 0.0100
+{'curd', 'bottled water'}: Support Value: 0.0129
+{'bottled water', 'soda'}: Support Value: 0.0286
+{'bottled water', 'fruit/vegetable juice'}: Support Value: 0.0114
+{'bottled water', 'newspapers'}: Support Value: 0.0114
+{'bottled water', 'pastry'}: Support Value: 0.0114
+{'root vegetables', 'bottled water'}: Support Value: 0.0129
+{'bottled water', 'canned beer'}: Support Value: 0.0100
+{'brown bread', 'bottled water'}: Support Value: 0.0100
+{'napkins', 'bottled water'}: Support Value: 0.0129
+{'soda', 'chocolate'}: Support Value: 0.0129
+{'root vegetables', 'curd'}: Support Value: 0.0129
+{'hygiene articles', 'curd'}: Support Value: 0.0100
+{'whipped/sour cream', 'curd'}: Support Value: 0.0114
+{'curd', 'dessert'}: Support Value: 0.0100
+{'root vegetables', 'beef'}: Support Value: 0.0143
+{'berries', 'beef'}: Support Value: 0.0100
+{'soda', 'frankfurter'}: Support Value: 0.0100
+{'soda', 'fruit/vegetable juice'}: Support Value: 0.0114
+{'soda', 'newspapers'}: Support Value: 0.0157
+{'sugar', 'soda'}: Support Value: 0.0129
+{'pastry', 'soda'}: Support Value: 0.0157
+{'root vegetables', 'soda'}: Support Value: 0.0114
+{'soda', 'waffles'}: Support Value: 0.0100
+{'soda', 'canned beer'}: Support Value: 0.0114
+{'soda', 'sausage'}: Support Value: 0.0200
+{'shopping bags', 'soda'}: Support Value: 0.0171
+{'napkins', 'soda'}: Support Value: 0.0129
+{'soda', 'pork'}: Support Value: 0.0100
+{'whipped/sour cream', 'soda'}: Support Value: 0.0100
+{'misc. beverages', 'soda'}: Support Value: 0.0100
+{'sugar', 'frankfurter'}: Support Value: 0.0100
+{'root vegetables', 'frankfurter'}: Support Value: 0.0157
+{'sausage', 'frankfurter'}: Support Value: 0.0157
+{'oil', 'newspapers'}: Support Value: 0.0100
+{'root vegetables', 'detergent'}: Support Value: 0.0114
+{'root vegetables', 'sausage'}: Support Value: 0.0129
+{'root vegetables', 'hamburger meat'}: Support Value: 0.0114
+{'berries', 'root vegetables'}: Support Value: 0.0129
+{'whipped/sour cream', 'root vegetables'}: Support Value: 0.0129
+{'root vegetables', 'domestic eggs'}: Support Value: 0.0129
+{'root vegetables', 'frozen vegetables'}: Support Value: 0.0114
+{'shopping bags', 'sausage'}: Support Value: 0.0114
+{'hygiene articles', 'napkins'}: Support Value: 0.0143
+{'rolls/buns', 'whole milk', 'margarine'}: Support Value: 0.0386
+{'other vegetables', 'citrus fruit', 'whole milk'}: Support Value: 0.0300
+{'rolls/buns', 'citrus fruit', 'whole milk'}: Support Value: 0.0343
+{'rolls/buns', 'citrus fruit', 'other vegetables'}: Support Value: 0.0300
+{'tropical fruit', 'whole milk', 'yogurt'}: Support Value: 0.0386
+{'other vegetables', 'whole milk', 'yogurt'}: Support Value: 0.0429
+{'rolls/buns', 'whole milk', 'yogurt'}: Support Value: 0.0429
+{'bottled water', 'whole milk', 'yogurt'}: Support Value: 0.0343
+{'curd', 'whole milk', 'yogurt'}: Support Value: 0.0429
+{'soda', 'whole milk', 'yogurt'}: Support Value: 0.0343
+{'whole milk', 'fruit/vegetable juice', 'yogurt'}: Support Value: 0.0429
+{'root vegetables', 'whole milk', 'yogurt'}: Support Value: 0.0300
+{'whole milk', 'sausage', 'yogurt'}: Support Value: 0.0343
+{'bottled water', 'rolls/buns', 'yogurt'}: Support Value: 0.0343
+{'rolls/buns', 'soda', 'yogurt'}: Support Value: 0.0343
+{'rolls/buns', 'sausage', 'yogurt'}: Support Value: 0.0300
+{'bottled water', 'soda', 'yogurt'}: Support Value: 0.0300
+{'other vegetables', 'whole milk', 'tropical fruit'}: Support Value: 0.0300
+{'root vegetables', 'whole milk', 'tropical fruit'}: Support Value: 0.0386
+{'root vegetables', 'other vegetables', 'tropical fruit'}: Support Value: 0.0343
+{'rolls/buns', 'other vegetables', 'whole milk'}: Support Value: 0.0600
+{'bottled water', 'other vegetables', 'whole milk'}: Support Value: 0.0386
+{'soda', 'other vegetables', 'whole milk'}: Support Value: 0.0429
+{'sugar', 'other vegetables', 'whole milk'}: Support Value: 0.0300
+{'root vegetables', 'other vegetables', 'whole milk'}: Support Value: 0.0600
+{'soda', 'rolls/buns', 'whole milk'}: Support Value: 0.0386
+{'rolls/buns', 'whole milk', 'frankfurter'}: Support Value: 0.0343
+{'pastry', 'rolls/buns', 'whole milk'}: Support Value: 0.0300
+{'rolls/buns', 'whole milk', 'sausage'}: Support Value: 0.0429
+{'bottled water', 'rolls/buns', 'other vegetables'}: Support Value: 0.0386
+{'soda', 'rolls/buns', 'other vegetables'}: Support Value: 0.0343
+{'root vegetables', 'rolls/buns', 'other vegetables'}: Support Value: 0.0300
+{'soda', 'bottled water', 'other vegetables'}: Support Value: 0.0300
+{'rolls/buns', 'soda', 'sausage'}: Support Value: 0.0300
+{'root vegetables', 'rolls/buns', 'sausage'}: Support Value: 0.0300
+
+Enter the minimum confidence (e.g., 0.5): 0.5
+
+Association Rules:
+Rule: {'citrus fruit'} -> {'margarine'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'whole milk'} -> {'margarine'}, Support: 0.0257, Confidence: 3.0000, Lift: 157.0000
+Rule: {'other vegetables'} -> {'margarine'}, Support: 0.0186, Confidence: 2.1667, Lift: 113.3889
+Rule: {'rolls/buns'} -> {'margarine'}, Support: 0.0171, Confidence: 2.0000, Lift: 104.6667
+Rule: {'yogurt'} -> {'citrus fruit'}, Support: 0.0157, Confidence: 0.5789, Lift: 9.5679
+Rule: {'citrus fruit'} -> {'tropical fruit'}, Support: 0.0200, Confidence: 0.6667, Lift: 9.9683
+Rule: {'tropical fruit'} -> {'citrus fruit'}, Support: 0.0200, Confidence: 0.7368, Lift: 12.1773
+Rule: {'whole milk'} -> {'citrus fruit'}, Support: 0.0300, Confidence: 1.1053, Lift: 18.2659
+Rule: {'other vegetables'} -> {'citrus fruit'}, Support: 0.0271, Confidence: 1.0000, Lift: 16.5263
+Rule: {'rolls/buns'} -> {'citrus fruit'}, Support: 0.0271, Confidence: 1.0000, Lift: 16.5263
+Rule: {'bottled water'} -> {'citrus fruit'}, Support: 0.0157, Confidence: 0.5789, Lift: 9.5679
+Rule: {'curd'} -> {'citrus fruit'}, Support: 0.0143, Confidence: 0.5263, Lift: 8.6981
+Rule: {'citrus fruit'} -> {'curd'}, Support: 0.0143, Confidence: 0.7143, Lift: 16.0204
+Rule: {'citrus fruit'} -> {'beef'}, Support: 0.0157, Confidence: 1.5714, Lift: 70.4898
+Rule: {'beef'} -> {'citrus fruit'}, Support: 0.0157, Confidence: 0.5789, Lift: 9.5679
+Rule: {'citrus fruit'} -> {'fruit/vegetable juice'}, Support: 0.0129, Confidence: 0.9000, Lift: 28.2600
+Rule: {'citrus fruit'} -> {'sugar'}, Support: 0.0129, Confidence: 1.1250, Lift: 44.1562
+Rule: {'citrus fruit'} -> {'butter milk'}, Support: 0.0100, Confidence: 1.4000, Lift: 87.9200
+Rule: {'root vegetables'} -> {'citrus fruit'}, Support: 0.0143, Confidence: 0.5263, Lift: 8.6981
+Rule: {'citrus fruit'} -> {'berries'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'yogurt'} -> {'coffee'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'yogurt'} -> {'tropical fruit'}, Support: 0.0214, Confidence: 0.7143, Lift: 10.6803
+Rule: {'whole milk'} -> {'yogurt'}, Support: 0.0443, Confidence: 0.9688, Lift: 9.5059
+Rule: {'other vegetables'} -> {'yogurt'}, Support: 0.0314, Confidence: 0.6875, Lift: 6.7461
+Rule: {'rolls/buns'} -> {'yogurt'}, Support: 0.0314, Confidence: 0.6875, Lift: 6.7461
+Rule: {'bottled water'} -> {'yogurt'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'yogurt'} -> {'bottled water'}, Support: 0.0300, Confidence: 0.8750, Lift: 11.4479
+Rule: {'curd'} -> {'yogurt'}, Support: 0.0243, Confidence: 0.5312, Lift: 5.2129
+Rule: {'yogurt'} -> {'curd'}, Support: 0.0243, Confidence: 1.2143, Lift: 27.2347
+Rule: {'soda'} -> {'yogurt'}, Support: 0.0257, Confidence: 0.5625, Lift: 5.5195
+Rule: {'yogurt'} -> {'soda'}, Support: 0.0257, Confidence: 0.5625, Lift: 5.5195
+Rule: {'yogurt'} -> {'frankfurter'}, Support: 0.0100, Confidence: 0.6364, Lift: 18.1653
+Rule: {'yogurt'} -> {'fruit/vegetable juice'}, Support: 0.0171, Confidence: 1.2000, Lift: 37.6800
+Rule: {'yogurt'} -> {'pastry'}, Support: 0.0114, Confidence: 1.1429, Lift: 51.2653
+Rule: {'yogurt'} -> {'sausage'}, Support: 0.0214, Confidence: 1.0000, Lift: 20.9333
+Rule: {'yogurt'} -> {'shopping bags'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'yogurt'} -> {'brown bread'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'yogurt'} -> {'napkins'}, Support: 0.0100, Confidence: 0.8750, Lift: 34.3438
+Rule: {'yogurt'} -> {'whipped/sour cream'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'tropical fruit'} -> {'coffee'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'whole milk'} -> {'coffee'}, Support: 0.0186, Confidence: 1.8571, Lift: 83.3061
+Rule: {'rolls/buns'} -> {'coffee'}, Support: 0.0114, Confidence: 1.1429, Lift: 51.2653
+Rule: {'sausage'} -> {'coffee'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'shopping bags'} -> {'coffee'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'coffee'} -> {'shopping bags'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'whole milk'} -> {'tropical fruit'}, Support: 0.0357, Confidence: 1.1905, Lift: 17.8005
+Rule: {'tropical fruit'} -> {'pip fruit'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'other vegetables'} -> {'tropical fruit'}, Support: 0.0314, Confidence: 1.0476, Lift: 15.6644
+Rule: {'rolls/buns'} -> {'tropical fruit'}, Support: 0.0229, Confidence: 0.7619, Lift: 11.3923
+Rule: {'bottled water'} -> {'tropical fruit'}, Support: 0.0186, Confidence: 0.6190, Lift: 9.2562
+Rule: {'tropical fruit'} -> {'bottled water'}, Support: 0.0186, Confidence: 0.5417, Lift: 7.0868
+Rule: {'tropical fruit'} -> {'curd'}, Support: 0.0143, Confidence: 0.7143, Lift: 16.0204
+Rule: {'tropical fruit'} -> {'frankfurter'}, Support: 0.0100, Confidence: 0.6364, Lift: 18.1653
+Rule: {'tropical fruit'} -> {'fruit/vegetable juice'}, Support: 0.0100, Confidence: 0.7000, Lift: 21.9800
+Rule: {'tropical fruit'} -> {'candy'}, Support: 0.0114, Confidence: 4.0000, Lift: 628.0000
+Rule: {'root vegetables'} -> {'tropical fruit'}, Support: 0.0243, Confidence: 0.8095, Lift: 12.1043
+Rule: {'tropical fruit'} -> {'root vegetables'}, Support: 0.0243, Confidence: 0.6538, Lift: 7.8964
+Rule: {'tropical fruit'} -> {'shopping bags'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'tropical fruit'} -> {'domestic eggs'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'whole milk'} -> {'pip fruit'}, Support: 0.0229, Confidence: 2.6667, Lift: 139.5556
+Rule: {'whole milk'} -> {'cream cheese '}, Support: 0.0129, Confidence: 3.0000, Lift: 314.0000
+Rule: {'other vegetables'} -> {'whole milk'}, Support: 0.0643, Confidence: 0.6716, Lift: 3.1477
+Rule: {'whole milk'} -> {'other vegetables'}, Support: 0.0643, Confidence: 0.9375, Lift: 6.1328
+Rule: {'whole milk'} -> {'butter'}, Support: 0.0171, Confidence: 1.7143, Lift: 76.8980
+Rule: {'rolls/buns'} -> {'whole milk'}, Support: 0.0643, Confidence: 0.6716, Lift: 3.1477
+Rule: {'whole milk'} -> {'rolls/buns'}, Support: 0.0643, Confidence: 0.8491, Lift: 5.0303
+Rule: {'whole milk'} -> {'bottled beer'}, Support: 0.0186, Confidence: 2.1667, Lift: 113.3889
+Rule: {'whole milk'} -> {'cereals'}, Support: 0.0100, Confidence: 3.5000, Lift: 549.5000
+Rule: {'whole milk'} -> {'bottled water'}, Support: 0.0343, Confidence: 1.0000, Lift: 13.0833
+Rule: {'whole milk'} -> {'chocolate'}, Support: 0.0114, Confidence: 1.6000, Lift: 100.4800
+Rule: {'whole milk'} -> {'curd'}, Support: 0.0314, Confidence: 1.5714, Lift: 35.2449
+Rule: {'whole milk'} -> {'beef'}, Support: 0.0229, Confidence: 2.2857, Lift: 102.5306
+Rule: {'whole milk'} -> {'soda'}, Support: 0.0386, Confidence: 0.8438, Lift: 8.2793
+Rule: {'whole milk'} -> {'frankfurter'}, Support: 0.0214, Confidence: 1.3636, Lift: 38.9256
+Rule: {'whole milk'} -> {'fruit/vegetable juice'}, Support: 0.0257, Confidence: 1.8000, Lift: 56.5200
+Rule: {'whole milk'} -> {'newspapers'}, Support: 0.0214, Confidence: 2.5000, Lift: 130.8333
+Rule: {'whole milk'} -> {'sugar'}, Support: 0.0171, Confidence: 1.5000, Lift: 58.8750
+Rule: {'whole milk'} -> {'packaged fruit/vegetables'}, Support: 0.0100, Confidence: 3.5000, Lift: 549.5000
+Rule: {'whole milk'} -> {'butter milk'}, Support: 0.0100, Confidence: 1.4000, Lift: 87.9200
+Rule: {'whole milk'} -> {'pastry'}, Support: 0.0229, Confidence: 2.2857, Lift: 102.5306
+Rule: {'whole milk'} -> {'root vegetables'}, Support: 0.0443, Confidence: 1.1923, Lift: 14.3994
+Rule: {'whole milk'} -> {'frozen dessert'}, Support: 0.0114, Confidence: 4.0000, Lift: 628.0000
+Rule: {'whole milk'} -> {'waffles'}, Support: 0.0129, Confidence: 2.2500, Lift: 176.6250
+Rule: {'whole milk'} -> {'sausage'}, Support: 0.0271, Confidence: 1.2667, Lift: 26.5156
+Rule: {'whole milk'} -> {'shopping bags'}, Support: 0.0143, Confidence: 1.1111, Lift: 38.7654
+Rule: {'whole milk'} -> {'brown bread'}, Support: 0.0186, Confidence: 2.1667, Lift: 113.3889
+Rule: {'whole milk'} -> {'beverages'}, Support: 0.0129, Confidence: 4.5000, Lift: 706.5000
+Rule: {'whole milk'} -> {'napkins'}, Support: 0.0143, Confidence: 1.2500, Lift: 49.0625
+Rule: {'whole milk'} -> {'hamburger meat'}, Support: 0.0200, Confidence: 2.8000, Lift: 175.8400
+Rule: {'whole milk'} -> {'hygiene articles'}, Support: 0.0157, Confidence: 1.8333, Lift: 95.9444
+Rule: {'whole milk'} -> {'pork'}, Support: 0.0186, Confidence: 3.2500, Lift: 255.1250
+Rule: {'whole milk'} -> {'berries'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'whole milk'} -> {'whipped/sour cream'}, Support: 0.0243, Confidence: 1.8889, Lift: 65.9012
+Rule: {'whole milk'} -> {'dessert'}, Support: 0.0114, Confidence: 2.6667, Lift: 279.1111
+Rule: {'whole milk'} -> {'domestic eggs'}, Support: 0.0200, Confidence: 2.3333, Lift: 122.1111
+Rule: {'whole milk'} -> {'ham'}, Support: 0.0143, Confidence: 2.5000, Lift: 196.2500
+Rule: {'whole milk'} -> {'oil'}, Support: 0.0114, Confidence: 2.6667, Lift: 279.1111
+Rule: {'whole milk'} -> {'frozen vegetables'}, Support: 0.0171, Confidence: 2.4000, Lift: 150.7200
+Rule: {'whole milk'} -> {'sliced cheese'}, Support: 0.0114, Confidence: 2.6667, Lift: 279.1111
+Rule: {'other vegetables'} -> {'pip fruit'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'rolls/buns'} -> {'pip fruit'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'pip fruit'} -> {'curd'}, Support: 0.0100, Confidence: 0.5000, Lift: 11.2143
+Rule: {'curd'} -> {'pip fruit'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'other vegetables'} -> {'cream cheese '}, Support: 0.0100, Confidence: 2.3333, Lift: 244.2222
+Rule: {'other vegetables'} -> {'butter'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'rolls/buns'} -> {'other vegetables'}, Support: 0.0471, Confidence: 0.6875, Lift: 4.4974
+Rule: {'other vegetables'} -> {'rolls/buns'}, Support: 0.0471, Confidence: 0.6226, Lift: 3.6889
+Rule: {'other vegetables'} -> {'bottled beer'}, Support: 0.0157, Confidence: 1.8333, Lift: 95.9444
+Rule: {'bottled water'} -> {'other vegetables'}, Support: 0.0371, Confidence: 0.5417, Lift: 3.5434
+Rule: {'other vegetables'} -> {'bottled water'}, Support: 0.0371, Confidence: 1.0833, Lift: 14.1736
+Rule: {'other vegetables'} -> {'chocolate'}, Support: 0.0100, Confidence: 1.4000, Lift: 87.9200
+Rule: {'other vegetables'} -> {'curd'}, Support: 0.0214, Confidence: 1.0714, Lift: 24.0306
+Rule: {'other vegetables'} -> {'beef'}, Support: 0.0143, Confidence: 1.4286, Lift: 64.0816
+Rule: {'other vegetables'} -> {'soda'}, Support: 0.0314, Confidence: 0.6875, Lift: 6.7461
+Rule: {'other vegetables'} -> {'frankfurter'}, Support: 0.0100, Confidence: 0.6364, Lift: 18.1653
+Rule: {'other vegetables'} -> {'fruit/vegetable juice'}, Support: 0.0157, Confidence: 1.1000, Lift: 34.5400
+Rule: {'other vegetables'} -> {'sugar'}, Support: 0.0143, Confidence: 1.2500, Lift: 49.0625
+Rule: {'other vegetables'} -> {'butter milk'}, Support: 0.0100, Confidence: 1.4000, Lift: 87.9200
+Rule: {'root vegetables'} -> {'other vegetables'}, Support: 0.0429, Confidence: 0.6250, Lift: 4.0885
+Rule: {'other vegetables'} -> {'root vegetables'}, Support: 0.0429, Confidence: 1.1538, Lift: 13.9349
+Rule: {'other vegetables'} -> {'sausage'}, Support: 0.0143, Confidence: 0.6667, Lift: 13.9556
+Rule: {'other vegetables'} -> {'shopping bags'}, Support: 0.0171, Confidence: 1.3333, Lift: 46.5185
+Rule: {'other vegetables'} -> {'brown bread'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'other vegetables'} -> {'napkins'}, Support: 0.0100, Confidence: 0.8750, Lift: 34.3438
+Rule: {'other vegetables'} -> {'hamburger meat'}, Support: 0.0143, Confidence: 2.0000, Lift: 125.6000
+Rule: {'other vegetables'} -> {'hygiene articles'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'other vegetables'} -> {'pork'}, Support: 0.0157, Confidence: 2.7500, Lift: 215.8750
+Rule: {'other vegetables'} -> {'berries'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'other vegetables'} -> {'whipped/sour cream'}, Support: 0.0200, Confidence: 1.5556, Lift: 54.2716
+Rule: {'other vegetables'} -> {'domestic eggs'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'other vegetables'} -> {'ham'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'other vegetables'} -> {'frozen vegetables'}, Support: 0.0143, Confidence: 2.0000, Lift: 125.6000
+Rule: {'other vegetables'} -> {'meat'}, Support: 0.0100, Confidence: 3.5000, Lift: 549.5000
+Rule: {'rolls/buns'} -> {'butter'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'bottled water'} -> {'butter'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'root vegetables'} -> {'butter'}, Support: 0.0129, Confidence: 1.2857, Lift: 57.6735
+Rule: {'whipped/sour cream'} -> {'butter'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'butter'} -> {'whipped/sour cream'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'rolls/buns'} -> {'bottled beer'}, Support: 0.0157, Confidence: 1.8333, Lift: 95.9444
+Rule: {'rolls/buns'} -> {'bottled water'}, Support: 0.0357, Confidence: 1.0417, Lift: 13.6285
+Rule: {'rolls/buns'} -> {'chocolate'}, Support: 0.0114, Confidence: 1.6000, Lift: 100.4800
+Rule: {'rolls/buns'} -> {'curd'}, Support: 0.0229, Confidence: 1.1429, Lift: 25.6327
+Rule: {'rolls/buns'} -> {'beef'}, Support: 0.0243, Confidence: 2.4286, Lift: 108.9388
+Rule: {'rolls/buns'} -> {'soda'}, Support: 0.0471, Confidence: 1.0312, Lift: 10.1191
+Rule: {'soda'} -> {'rolls/buns'}, Support: 0.0471, Confidence: 0.6226, Lift: 3.6889
+Rule: {'rolls/buns'} -> {'frankfurter'}, Support: 0.0343, Confidence: 2.1818, Lift: 62.2810
+Rule: {'rolls/buns'} -> {'fruit/vegetable juice'}, Support: 0.0171, Confidence: 1.2000, Lift: 37.6800
+Rule: {'rolls/buns'} -> {'newspapers'}, Support: 0.0200, Confidence: 2.3333, Lift: 122.1111
+Rule: {'rolls/buns'} -> {'sugar'}, Support: 0.0129, Confidence: 1.1250, Lift: 44.1562
+Rule: {'rolls/buns'} -> {'butter milk'}, Support: 0.0129, Confidence: 1.8000, Lift: 113.0400
+Rule: {'rolls/buns'} -> {'pastry'}, Support: 0.0243, Confidence: 2.4286, Lift: 108.9388
+Rule: {'rolls/buns'} -> {'root vegetables'}, Support: 0.0243, Confidence: 0.6538, Lift: 7.8964
+Rule: {'rolls/buns'} -> {'waffles'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'rolls/buns'} -> {'canned beer'}, Support: 0.0157, Confidence: 2.7500, Lift: 215.8750
+Rule: {'rolls/buns'} -> {'sausage'}, Support: 0.0400, Confidence: 1.8667, Lift: 39.0756
+Rule: {'sausage'} -> {'rolls/buns'}, Support: 0.0400, Confidence: 0.5283, Lift: 3.1299
+Rule: {'rolls/buns'} -> {'shopping bags'}, Support: 0.0186, Confidence: 1.4444, Lift: 50.3951
+Rule: {'rolls/buns'} -> {'brown bread'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'rolls/buns'} -> {'napkins'}, Support: 0.0143, Confidence: 1.2500, Lift: 49.0625
+Rule: {'rolls/buns'} -> {'hamburger meat'}, Support: 0.0129, Confidence: 1.8000, Lift: 113.0400
+Rule: {'rolls/buns'} -> {'hygiene articles'}, Support: 0.0171, Confidence: 2.0000, Lift: 104.6667
+Rule: {'rolls/buns'} -> {'whipped/sour cream'}, Support: 0.0200, Confidence: 1.5556, Lift: 54.2716
+Rule: {'rolls/buns'} -> {'domestic eggs'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'rolls/buns'} -> {'ham'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'rolls/buns'} -> {'frozen vegetables'}, Support: 0.0129, Confidence: 1.8000, Lift: 113.0400
+Rule: {'rolls/buns'} -> {'sliced cheese'}, Support: 0.0143, Confidence: 3.3333, Lift: 348.8889
+Rule: {'bottled water'} -> {'bottled beer'}, Support: 0.0143, Confidence: 1.6667, Lift: 87.2222
+Rule: {'soda'} -> {'bottled beer'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'bottled water'} -> {'curd'}, Support: 0.0129, Confidence: 0.6429, Lift: 14.4184
+Rule: {'bottled water'} -> {'soda'}, Support: 0.0286, Confidence: 0.6250, Lift: 6.1328
+Rule: {'soda'} -> {'bottled water'}, Support: 0.0286, Confidence: 0.8333, Lift: 10.9028
+Rule: {'bottled water'} -> {'fruit/vegetable juice'}, Support: 0.0114, Confidence: 0.8000, Lift: 25.1200
+Rule: {'bottled water'} -> {'newspapers'}, Support: 0.0114, Confidence: 1.3333, Lift: 69.7778
+Rule: {'bottled water'} -> {'pastry'}, Support: 0.0114, Confidence: 1.1429, Lift: 51.2653
+Rule: {'bottled water'} -> {'canned beer'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'bottled water'} -> {'brown bread'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'bottled water'} -> {'napkins'}, Support: 0.0129, Confidence: 1.1250, Lift: 44.1562
+Rule: {'soda'} -> {'chocolate'}, Support: 0.0129, Confidence: 1.8000, Lift: 113.0400
+Rule: {'root vegetables'} -> {'curd'}, Support: 0.0129, Confidence: 0.6429, Lift: 14.4184
+Rule: {'hygiene articles'} -> {'curd'}, Support: 0.0100, Confidence: 0.5000, Lift: 11.2143
+Rule: {'curd'} -> {'hygiene articles'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'whipped/sour cream'} -> {'curd'}, Support: 0.0114, Confidence: 0.5714, Lift: 12.8163
+Rule: {'curd'} -> {'whipped/sour cream'}, Support: 0.0114, Confidence: 0.8889, Lift: 31.0123
+Rule: {'curd'} -> {'dessert'}, Support: 0.0100, Confidence: 2.3333, Lift: 244.2222
+Rule: {'dessert'} -> {'curd'}, Support: 0.0100, Confidence: 0.5000, Lift: 11.2143
+Rule: {'root vegetables'} -> {'beef'}, Support: 0.0143, Confidence: 1.4286, Lift: 64.0816
+Rule: {'berries'} -> {'beef'}, Support: 0.0100, Confidence: 1.0000, Lift: 44.8571
+Rule: {'beef'} -> {'berries'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'soda'} -> {'frankfurter'}, Support: 0.0100, Confidence: 0.6364, Lift: 18.1653
+Rule: {'soda'} -> {'fruit/vegetable juice'}, Support: 0.0114, Confidence: 0.8000, Lift: 25.1200
+Rule: {'soda'} -> {'newspapers'}, Support: 0.0157, Confidence: 1.8333, Lift: 95.9444
+Rule: {'soda'} -> {'sugar'}, Support: 0.0129, Confidence: 1.1250, Lift: 44.1562
+Rule: {'soda'} -> {'pastry'}, Support: 0.0157, Confidence: 1.5714, Lift: 70.4898
+Rule: {'soda'} -> {'waffles'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'soda'} -> {'canned beer'}, Support: 0.0114, Confidence: 2.0000, Lift: 157.0000
+Rule: {'soda'} -> {'sausage'}, Support: 0.0200, Confidence: 0.9333, Lift: 19.5378
+Rule: {'soda'} -> {'shopping bags'}, Support: 0.0171, Confidence: 1.3333, Lift: 46.5185
+Rule: {'soda'} -> {'napkins'}, Support: 0.0129, Confidence: 1.1250, Lift: 44.1562
+Rule: {'soda'} -> {'pork'}, Support: 0.0100, Confidence: 1.7500, Lift: 137.3750
+Rule: {'soda'} -> {'whipped/sour cream'}, Support: 0.0100, Confidence: 0.7778, Lift: 27.1358
+Rule: {'soda'} -> {'misc. beverages'}, Support: 0.0100, Confidence: 3.5000, Lift: 549.5000
+Rule: {'sugar'} -> {'frankfurter'}, Support: 0.0100, Confidence: 0.6364, Lift: 18.1653
+Rule: {'frankfurter'} -> {'sugar'}, Support: 0.0100, Confidence: 0.8750, Lift: 34.3438
+Rule: {'root vegetables'} -> {'frankfurter'}, Support: 0.0157, Confidence: 1.0000, Lift: 28.5455
+Rule: {'sausage'} -> {'frankfurter'}, Support: 0.0157, Confidence: 1.0000, Lift: 28.5455
+Rule: {'frankfurter'} -> {'sausage'}, Support: 0.0157, Confidence: 0.7333, Lift: 15.3511
+Rule: {'oil'} -> {'newspapers'}, Support: 0.0100, Confidence: 1.1667, Lift: 61.0556
+Rule: {'newspapers'} -> {'oil'}, Support: 0.0100, Confidence: 2.3333, Lift: 244.2222
+Rule: {'root vegetables'} -> {'detergent'}, Support: 0.0114, Confidence: 4.0000, Lift: 628.0000
+Rule: {'root vegetables'} -> {'sausage'}, Support: 0.0129, Confidence: 0.6000, Lift: 12.5600
+Rule: {'root vegetables'} -> {'hamburger meat'}, Support: 0.0114, Confidence: 1.6000, Lift: 100.4800
+Rule: {'root vegetables'} -> {'berries'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'root vegetables'} -> {'whipped/sour cream'}, Support: 0.0129, Confidence: 1.0000, Lift: 34.8889
+Rule: {'root vegetables'} -> {'domestic eggs'}, Support: 0.0129, Confidence: 1.5000, Lift: 78.5000
+Rule: {'root vegetables'} -> {'frozen vegetables'}, Support: 0.0114, Confidence: 1.6000, Lift: 100.4800
+Rule: {'shopping bags'} -> {'sausage'}, Support: 0.0114, Confidence: 0.5333, Lift: 11.1644
+Rule: {'sausage'} -> {'shopping bags'}, Support: 0.0114, Confidence: 0.8889, Lift: 31.0123
+Rule: {'hygiene articles'} -> {'napkins'}, Support: 0.0143, Confidence: 1.2500, Lift: 49.0625
+Rule: {'napkins'} -> {'hygiene articles'}, Support: 0.0143, Confidence: 1.6667, Lift: 87.2222
+Rule: {'rolls/buns'} -> {'whole milk', 'margarine'}, Support: 0.0386, Confidence: 13.5000, Lift: 2119.5000
+Rule: {'whole milk'} -> {'rolls/buns', 'margarine'}, Support: 0.0386, Confidence: 13.5000, Lift: 2119.5000
+Rule: {'margarine'} -> {'rolls/buns', 'whole milk'}, Support: 0.0386, Confidence: 3.0000, Lift: 104.6667
+Rule: {'rolls/buns', 'whole milk'} -> {'margarine'}, Support: 0.0386, Confidence: 4.5000, Lift: 235.5000
+Rule: {'whole milk', 'margarine'} -> {'rolls/buns'}, Support: 0.0386, Confidence: 0.5094, Lift: 3.0182
+Rule: {'other vegetables'} -> {'citrus fruit', 'whole milk'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'citrus fruit'} -> {'whole milk', 'other vegetables'}, Support: 0.0300, Confidence: 2.3333, Lift: 81.4074
+Rule: {'whole milk'} -> {'citrus fruit', 'other vegetables'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'whole milk', 'other vegetables'} -> {'citrus fruit'}, Support: 0.0300, Confidence: 1.1053, Lift: 18.2659
+Rule: {'rolls/buns'} -> {'citrus fruit', 'whole milk'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'citrus fruit'} -> {'rolls/buns', 'whole milk'}, Support: 0.0343, Confidence: 2.6667, Lift: 93.0370
+Rule: {'whole milk'} -> {'rolls/buns', 'citrus fruit'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'rolls/buns', 'whole milk'} -> {'citrus fruit'}, Support: 0.0343, Confidence: 1.2632, Lift: 20.8753
+Rule: {'rolls/buns'} -> {'citrus fruit', 'other vegetables'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'citrus fruit'} -> {'rolls/buns', 'other vegetables'}, Support: 0.0300, Confidence: 3.5000, Lift: 183.1667
+Rule: {'other vegetables'} -> {'rolls/buns', 'citrus fruit'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'rolls/buns', 'other vegetables'} -> {'citrus fruit'}, Support: 0.0300, Confidence: 1.1053, Lift: 18.2659
+Rule: {'tropical fruit'} -> {'whole milk', 'yogurt'}, Support: 0.0386, Confidence: 2.7000, Lift: 84.7800
+Rule: {'whole milk'} -> {'yogurt', 'tropical fruit'}, Support: 0.0386, Confidence: 13.5000, Lift: 2119.5000
+Rule: {'yogurt'} -> {'whole milk', 'tropical fruit'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'whole milk', 'tropical fruit'} -> {'yogurt'}, Support: 0.0386, Confidence: 0.8438, Lift: 8.2793
+Rule: {'whole milk', 'yogurt'} -> {'tropical fruit'}, Support: 0.0386, Confidence: 1.2857, Lift: 19.2245
+Rule: {'other vegetables'} -> {'whole milk', 'yogurt'}, Support: 0.0429, Confidence: 3.0000, Lift: 94.2000
+Rule: {'whole milk'} -> {'other vegetables', 'yogurt'}, Support: 0.0429, Confidence: 15.0000, Lift: 2355.0000
+Rule: {'yogurt'} -> {'whole milk', 'other vegetables'}, Support: 0.0429, Confidence: 3.3333, Lift: 116.2963
+Rule: {'whole milk', 'other vegetables'} -> {'yogurt'}, Support: 0.0429, Confidence: 0.9375, Lift: 9.1992
+Rule: {'whole milk', 'yogurt'} -> {'other vegetables'}, Support: 0.0429, Confidence: 0.6250, Lift: 4.0885
+Rule: {'rolls/buns'} -> {'whole milk', 'yogurt'}, Support: 0.0429, Confidence: 3.0000, Lift: 94.2000
+Rule: {'whole milk'} -> {'rolls/buns', 'yogurt'}, Support: 0.0429, Confidence: 6.0000, Lift: 376.8000
+Rule: {'yogurt'} -> {'rolls/buns', 'whole milk'}, Support: 0.0429, Confidence: 3.3333, Lift: 116.2963
+Rule: {'rolls/buns', 'whole milk'} -> {'yogurt'}, Support: 0.0429, Confidence: 0.9375, Lift: 9.1992
+Rule: {'whole milk', 'yogurt'} -> {'rolls/buns'}, Support: 0.0429, Confidence: 0.5660, Lift: 3.3535
+Rule: {'bottled water'} -> {'whole milk', 'yogurt'}, Support: 0.0343, Confidence: 2.4000, Lift: 75.3600
+Rule: {'whole milk'} -> {'bottled water', 'yogurt'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'yogurt'} -> {'bottled water', 'whole milk'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'bottled water', 'whole milk'} -> {'yogurt'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'whole milk', 'yogurt'} -> {'bottled water'}, Support: 0.0343, Confidence: 1.0000, Lift: 13.0833
+Rule: {'curd'} -> {'whole milk', 'yogurt'}, Support: 0.0429, Confidence: 3.0000, Lift: 94.2000
+Rule: {'whole milk'} -> {'curd', 'yogurt'}, Support: 0.0429, Confidence: 15.0000, Lift: 2355.0000
+Rule: {'yogurt'} -> {'curd', 'whole milk'}, Support: 0.0429, Confidence: 15.0000, Lift: 2355.0000
+Rule: {'curd', 'whole milk'} -> {'yogurt'}, Support: 0.0429, Confidence: 0.9375, Lift: 9.1992
+Rule: {'whole milk', 'yogurt'} -> {'curd'}, Support: 0.0429, Confidence: 2.1429, Lift: 48.0612
+Rule: {'soda'} -> {'whole milk', 'yogurt'}, Support: 0.0343, Confidence: 2.4000, Lift: 75.3600
+Rule: {'whole milk'} -> {'soda', 'yogurt'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'yogurt'} -> {'whole milk', 'soda'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'whole milk', 'soda'} -> {'yogurt'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'whole milk', 'yogurt'} -> {'soda'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'whole milk'} -> {'fruit/vegetable juice', 'yogurt'}, Support: 0.0429, Confidence: 15.0000, Lift: 2355.0000
+Rule: {'fruit/vegetable juice'} -> {'whole milk', 'yogurt'}, Support: 0.0429, Confidence: 3.0000, Lift: 94.2000
+Rule: {'yogurt'} -> {'whole milk', 'fruit/vegetable juice'}, Support: 0.0429, Confidence: 15.0000, Lift: 2355.0000
+Rule: {'whole milk', 'fruit/vegetable juice'} -> {'yogurt'}, Support: 0.0429, Confidence: 0.9375, Lift: 9.1992
+Rule: {'whole milk', 'yogurt'} -> {'fruit/vegetable juice'}, Support: 0.0429, Confidence: 3.0000, Lift: 94.2000
+Rule: {'root vegetables'} -> {'whole milk', 'yogurt'}, Support: 0.0300, Confidence: 2.1000, Lift: 65.9400
+Rule: {'whole milk'} -> {'root vegetables', 'yogurt'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'yogurt'} -> {'root vegetables', 'whole milk'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'root vegetables', 'whole milk'} -> {'yogurt'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'whole milk', 'yogurt'} -> {'root vegetables'}, Support: 0.0300, Confidence: 0.8077, Lift: 9.7544
+Rule: {'whole milk'} -> {'sausage', 'yogurt'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'sausage'} -> {'whole milk', 'yogurt'}, Support: 0.0343, Confidence: 2.4000, Lift: 75.3600
+Rule: {'yogurt'} -> {'whole milk', 'sausage'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'whole milk', 'sausage'} -> {'yogurt'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'whole milk', 'yogurt'} -> {'sausage'}, Support: 0.0343, Confidence: 1.6000, Lift: 33.4933
+Rule: {'bottled water'} -> {'rolls/buns', 'yogurt'}, Support: 0.0343, Confidence: 4.8000, Lift: 301.4400
+Rule: {'rolls/buns'} -> {'bottled water', 'yogurt'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'yogurt'} -> {'rolls/buns', 'bottled water'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'rolls/buns', 'bottled water'} -> {'yogurt'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'rolls/buns', 'yogurt'} -> {'bottled water'}, Support: 0.0343, Confidence: 1.0000, Lift: 13.0833
+Rule: {'rolls/buns'} -> {'soda', 'yogurt'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'soda'} -> {'rolls/buns', 'yogurt'}, Support: 0.0343, Confidence: 4.8000, Lift: 301.4400
+Rule: {'yogurt'} -> {'rolls/buns', 'soda'}, Support: 0.0343, Confidence: 4.8000, Lift: 301.4400
+Rule: {'rolls/buns', 'soda'} -> {'yogurt'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'rolls/buns', 'yogurt'} -> {'soda'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'rolls/buns'} -> {'sausage', 'yogurt'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'sausage'} -> {'rolls/buns', 'yogurt'}, Support: 0.0300, Confidence: 4.2000, Lift: 263.7600
+Rule: {'yogurt'} -> {'rolls/buns', 'sausage'}, Support: 0.0300, Confidence: 4.2000, Lift: 263.7600
+Rule: {'rolls/buns', 'sausage'} -> {'yogurt'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'rolls/buns', 'yogurt'} -> {'sausage'}, Support: 0.0300, Confidence: 1.4000, Lift: 29.3067
+Rule: {'bottled water'} -> {'soda', 'yogurt'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'soda'} -> {'bottled water', 'yogurt'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'yogurt'} -> {'bottled water', 'soda'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'bottled water', 'soda'} -> {'yogurt'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'bottled water', 'yogurt'} -> {'soda'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'soda', 'yogurt'} -> {'bottled water'}, Support: 0.0300, Confidence: 0.8750, Lift: 11.4479
+Rule: {'other vegetables'} -> {'whole milk', 'tropical fruit'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'whole milk'} -> {'other vegetables', 'tropical fruit'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'tropical fruit'} -> {'whole milk', 'other vegetables'}, Support: 0.0300, Confidence: 2.3333, Lift: 81.4074
+Rule: {'whole milk', 'other vegetables'} -> {'tropical fruit'}, Support: 0.0300, Confidence: 1.0000, Lift: 14.9524
+Rule: {'root vegetables'} -> {'whole milk', 'tropical fruit'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'whole milk'} -> {'root vegetables', 'tropical fruit'}, Support: 0.0386, Confidence: 9.0000, Lift: 942.0000
+Rule: {'tropical fruit'} -> {'root vegetables', 'whole milk'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'root vegetables', 'whole milk'} -> {'tropical fruit'}, Support: 0.0386, Confidence: 1.2857, Lift: 19.2245
+Rule: {'whole milk', 'tropical fruit'} -> {'root vegetables'}, Support: 0.0386, Confidence: 1.0385, Lift: 12.5414
+Rule: {'root vegetables'} -> {'other vegetables', 'tropical fruit'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'other vegetables'} -> {'root vegetables', 'tropical fruit'}, Support: 0.0343, Confidence: 8.0000, Lift: 837.3333
+Rule: {'tropical fruit'} -> {'root vegetables', 'other vegetables'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'root vegetables', 'other vegetables'} -> {'tropical fruit'}, Support: 0.0343, Confidence: 1.1429, Lift: 17.0884
+Rule: {'root vegetables', 'tropical fruit'} -> {'other vegetables'}, Support: 0.0343, Confidence: 0.5000, Lift: 3.2708
+Rule: {'other vegetables', 'tropical fruit'} -> {'root vegetables'}, Support: 0.0343, Confidence: 0.9231, Lift: 11.1479
+Rule: {'rolls/buns'} -> {'whole milk', 'other vegetables'}, Support: 0.0600, Confidence: 4.6667, Lift: 162.8148
+Rule: {'other vegetables'} -> {'rolls/buns', 'whole milk'}, Support: 0.0600, Confidence: 4.6667, Lift: 162.8148
+Rule: {'whole milk'} -> {'rolls/buns', 'other vegetables'}, Support: 0.0600, Confidence: 7.0000, Lift: 366.3333
+Rule: {'rolls/buns', 'other vegetables'} -> {'whole milk'}, Support: 0.0600, Confidence: 0.6269, Lift: 2.9378
+Rule: {'rolls/buns', 'whole milk'} -> {'other vegetables'}, Support: 0.0600, Confidence: 0.8750, Lift: 5.7240
+Rule: {'whole milk', 'other vegetables'} -> {'rolls/buns'}, Support: 0.0600, Confidence: 0.7925, Lift: 4.6949
+Rule: {'bottled water'} -> {'whole milk', 'other vegetables'}, Support: 0.0386, Confidence: 3.0000, Lift: 104.6667
+Rule: {'other vegetables'} -> {'bottled water', 'whole milk'}, Support: 0.0386, Confidence: 9.0000, Lift: 942.0000
+Rule: {'whole milk'} -> {'bottled water', 'other vegetables'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'bottled water', 'whole milk'} -> {'other vegetables'}, Support: 0.0386, Confidence: 0.5625, Lift: 3.6797
+Rule: {'whole milk', 'other vegetables'} -> {'bottled water'}, Support: 0.0386, Confidence: 1.1250, Lift: 14.7188
+Rule: {'soda'} -> {'whole milk', 'other vegetables'}, Support: 0.0429, Confidence: 3.3333, Lift: 116.2963
+Rule: {'other vegetables'} -> {'whole milk', 'soda'}, Support: 0.0429, Confidence: 7.5000, Lift: 588.7500
+Rule: {'whole milk'} -> {'other vegetables', 'soda'}, Support: 0.0429, Confidence: 7.5000, Lift: 588.7500
+Rule: {'whole milk', 'soda'} -> {'other vegetables'}, Support: 0.0429, Confidence: 0.6250, Lift: 4.0885
+Rule: {'whole milk', 'other vegetables'} -> {'soda'}, Support: 0.0429, Confidence: 0.9375, Lift: 9.1992
+Rule: {'sugar'} -> {'whole milk', 'other vegetables'}, Support: 0.0300, Confidence: 2.3333, Lift: 81.4074
+Rule: {'other vegetables'} -> {'sugar', 'whole milk'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'whole milk'} -> {'sugar', 'other vegetables'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'whole milk', 'other vegetables'} -> {'sugar'}, Support: 0.0300, Confidence: 2.6250, Lift: 103.0312
+Rule: {'root vegetables'} -> {'whole milk', 'other vegetables'}, Support: 0.0600, Confidence: 4.6667, Lift: 162.8148
+Rule: {'other vegetables'} -> {'root vegetables', 'whole milk'}, Support: 0.0600, Confidence: 10.5000, Lift: 824.2500
+Rule: {'whole milk'} -> {'root vegetables', 'other vegetables'}, Support: 0.0600, Confidence: 10.5000, Lift: 824.2500
+Rule: {'root vegetables', 'other vegetables'} -> {'whole milk'}, Support: 0.0600, Confidence: 0.6269, Lift: 2.9378
+Rule: {'root vegetables', 'whole milk'} -> {'other vegetables'}, Support: 0.0600, Confidence: 0.8750, Lift: 5.7240
+Rule: {'whole milk', 'other vegetables'} -> {'root vegetables'}, Support: 0.0600, Confidence: 1.6154, Lift: 19.5089
+Rule: {'soda'} -> {'rolls/buns', 'whole milk'}, Support: 0.0386, Confidence: 3.0000, Lift: 104.6667
+Rule: {'rolls/buns'} -> {'whole milk', 'soda'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'whole milk'} -> {'rolls/buns', 'soda'}, Support: 0.0386, Confidence: 5.4000, Lift: 339.1200
+Rule: {'whole milk', 'soda'} -> {'rolls/buns'}, Support: 0.0386, Confidence: 0.5094, Lift: 3.0182
+Rule: {'rolls/buns', 'whole milk'} -> {'soda'}, Support: 0.0386, Confidence: 0.8438, Lift: 8.2793
+Rule: {'rolls/buns'} -> {'whole milk', 'frankfurter'}, Support: 0.0343, Confidence: 12.0000, Lift: 1884.0000
+Rule: {'whole milk'} -> {'rolls/buns', 'frankfurter'}, Support: 0.0343, Confidence: 12.0000, Lift: 1884.0000
+Rule: {'frankfurter'} -> {'rolls/buns', 'whole milk'}, Support: 0.0343, Confidence: 2.6667, Lift: 93.0370
+Rule: {'rolls/buns', 'whole milk'} -> {'frankfurter'}, Support: 0.0343, Confidence: 2.1818, Lift: 62.2810
+Rule: {'pastry'} -> {'rolls/buns', 'whole milk'}, Support: 0.0300, Confidence: 2.3333, Lift: 81.4074
+Rule: {'rolls/buns'} -> {'whole milk', 'pastry'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'whole milk'} -> {'rolls/buns', 'pastry'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'rolls/buns', 'whole milk'} -> {'pastry'}, Support: 0.0300, Confidence: 3.0000, Lift: 134.5714
+Rule: {'rolls/buns'} -> {'whole milk', 'sausage'}, Support: 0.0429, Confidence: 10.0000, Lift: 1046.6667
+Rule: {'whole milk'} -> {'rolls/buns', 'sausage'}, Support: 0.0429, Confidence: 6.0000, Lift: 376.8000
+Rule: {'sausage'} -> {'rolls/buns', 'whole milk'}, Support: 0.0429, Confidence: 3.3333, Lift: 116.2963
+Rule: {'rolls/buns', 'whole milk'} -> {'sausage'}, Support: 0.0429, Confidence: 2.0000, Lift: 41.8667
+Rule: {'whole milk', 'sausage'} -> {'rolls/buns'}, Support: 0.0429, Confidence: 0.5660, Lift: 3.3535
+Rule: {'bottled water'} -> {'rolls/buns', 'other vegetables'}, Support: 0.0386, Confidence: 4.5000, Lift: 235.5000
+Rule: {'rolls/buns'} -> {'bottled water', 'other vegetables'}, Support: 0.0386, Confidence: 6.7500, Lift: 529.8750
+Rule: {'other vegetables'} -> {'rolls/buns', 'bottled water'}, Support: 0.0386, Confidence: 9.0000, Lift: 942.0000
+Rule: {'rolls/buns', 'bottled water'} -> {'other vegetables'}, Support: 0.0386, Confidence: 0.5625, Lift: 3.6797
+Rule: {'bottled water', 'other vegetables'} -> {'rolls/buns'}, Support: 0.0386, Confidence: 0.5094, Lift: 3.0182
+Rule: {'rolls/buns', 'other vegetables'} -> {'bottled water'}, Support: 0.0386, Confidence: 1.1250, Lift: 14.7188
+Rule: {'soda'} -> {'rolls/buns', 'other vegetables'}, Support: 0.0343, Confidence: 4.0000, Lift: 209.3333
+Rule: {'rolls/buns'} -> {'other vegetables', 'soda'}, Support: 0.0343, Confidence: 6.0000, Lift: 471.0000
+Rule: {'other vegetables'} -> {'rolls/buns', 'soda'}, Support: 0.0343, Confidence: 4.8000, Lift: 301.4400
+Rule: {'rolls/buns', 'soda'} -> {'other vegetables'}, Support: 0.0343, Confidence: 0.5000, Lift: 3.2708
+Rule: {'rolls/buns', 'other vegetables'} -> {'soda'}, Support: 0.0343, Confidence: 0.7500, Lift: 7.3594
+Rule: {'root vegetables'} -> {'rolls/buns', 'other vegetables'}, Support: 0.0300, Confidence: 3.5000, Lift: 183.1667
+Rule: {'rolls/buns'} -> {'root vegetables', 'other vegetables'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'other vegetables'} -> {'root vegetables', 'rolls/buns'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'rolls/buns', 'other vegetables'} -> {'root vegetables'}, Support: 0.0300, Confidence: 0.8077, Lift: 9.7544
+Rule: {'soda'} -> {'bottled water', 'other vegetables'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'bottled water'} -> {'other vegetables', 'soda'}, Support: 0.0300, Confidence: 5.2500, Lift: 412.1250
+Rule: {'other vegetables'} -> {'bottled water', 'soda'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'other vegetables', 'soda'} -> {'bottled water'}, Support: 0.0300, Confidence: 0.8750, Lift: 11.4479
+Rule: {'bottled water', 'other vegetables'} -> {'soda'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'rolls/buns'} -> {'soda', 'sausage'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'soda'} -> {'rolls/buns', 'sausage'}, Support: 0.0300, Confidence: 4.2000, Lift: 263.7600
+Rule: {'sausage'} -> {'rolls/buns', 'soda'}, Support: 0.0300, Confidence: 4.2000, Lift: 263.7600
+Rule: {'rolls/buns', 'soda'} -> {'sausage'}, Support: 0.0300, Confidence: 1.4000, Lift: 29.3067
+Rule: {'rolls/buns', 'sausage'} -> {'soda'}, Support: 0.0300, Confidence: 0.6562, Lift: 6.4395
+Rule: {'root vegetables'} -> {'rolls/buns', 'sausage'}, Support: 0.0300, Confidence: 4.2000, Lift: 263.7600
+Rule: {'rolls/buns'} -> {'root vegetables', 'sausage'}, Support: 0.0300, Confidence: 10.5000, Lift: 1648.5000
+Rule: {'sausage'} -> {'root vegetables', 'rolls/buns'}, Support: 0.0300, Confidence: 7.0000, Lift: 732.6667
+Rule: {'root vegetables', 'rolls/buns'} -> {'sausage'}, Support: 0.0300, Confidence: 1.4000, Lift: 29.3067
+Rule: {'rolls/buns', 'sausage'} -> {'root vegetables'}, Support: 0.0300, Confidence: 0.8077, Lift: 9.7544
+
+Enter minimum confidence (e.g., 0.1): 0.1
+Enter minimum leverage (e.g., 0.005) or leave blank: 0.005
+Enter minimum conviction (e.g., 0.8) or leave blank: 0.8
+Generated Association Rules with Leverage and Conviction:
+Rule: {'citrus fruit'} -> {'margarine'}
+  Support: 0.0100, Confidence: 0.1077, Lift: 2.0940, Leverage: 0.0052, Conviction: 1.0631
+============================================================
+Rule: {'margarine'} -> {'citrus fruit'}
+  Support: 0.0100, Confidence: 0.1944, Lift: 2.0940, Leverage: 0.0052, Conviction: 1.1261
+============================================================
+Rule: {'whole milk'} -> {'margarine'}
+  Support: 0.0257, Confidence: 0.1023, Lift: 1.9886, Leverage: 0.0128, Conviction: 1.0566
+============================================================
+Rule: {'margarine'} -> {'whole milk'}
+  Support: 0.0257, Confidence: 0.5000, Lift: 1.9886, Leverage: 0.0128, Conviction: 1.4971
+============================================================
+Rule: {'other vegetables'} -> {'margarine'}
+  Support: 0.0186, Confidence: 0.1008, Lift: 1.9595, Leverage: 0.0091, Conviction: 1.0549
+============================================================
+Rule: {'margarine'} -> {'other vegetables'}
+  Support: 0.0186, Confidence: 0.3611, Lift: 1.9595, Leverage: 0.0091, Conviction: 1.2768
+============================================================
+Rule: {'margarine'} -> {'rolls/buns'}
+  Support: 0.0171, Confidence: 0.3333, Lift: 1.5251, Leverage: 0.0059, Conviction: 1.1721
+============================================================
+Rule: {'citrus fruit'} -> {'tropical fruit'}
+  Support: 0.0200, Confidence: 0.2154, Lift: 2.3195, Leverage: 0.0114, Conviction: 1.1562
+============================================================
+Rule: {'tropical fruit'} -> {'citrus fruit'}
+  Support: 0.0200, Confidence: 0.2154, Lift: 2.3195, Leverage: 0.0114, Conviction: 1.1562
+============================================================
+Rule: {'citrus fruit'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 0.3231, Lift: 1.2850, Leverage: 0.0067, Conviction: 1.1058
+============================================================
+Rule: {'whole milk'} -> {'citrus fruit'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 1.2850, Leverage: 0.0067, Conviction: 1.0300
+============================================================
+Rule: {'citrus fruit'} -> {'other vegetables'}
+  Support: 0.0271, Confidence: 0.2923, Lift: 1.5862, Leverage: 0.0100, Conviction: 1.1526
+============================================================
+Rule: {'other vegetables'} -> {'citrus fruit'}
+  Support: 0.0271, Confidence: 0.1473, Lift: 1.5862, Leverage: 0.0100, Conviction: 1.0638
+============================================================
+Rule: {'rolls/buns'} -> {'citrus fruit'}
+  Support: 0.0271, Confidence: 0.1242, Lift: 1.3374, Leverage: 0.0068, Conviction: 1.0358
+============================================================
+Rule: {'citrus fruit'} -> {'rolls/buns'}
+  Support: 0.0271, Confidence: 0.2923, Lift: 1.3374, Leverage: 0.0068, Conviction: 1.1042
+============================================================
+Rule: {'curd'} -> {'citrus fruit'}
+  Support: 0.0143, Confidence: 0.1923, Lift: 2.0710, Leverage: 0.0074, Conviction: 1.1231
+============================================================
+Rule: {'citrus fruit'} -> {'curd'}
+  Support: 0.0143, Confidence: 0.1538, Lift: 2.0710, Leverage: 0.0074, Conviction: 1.0940
+============================================================
+Rule: {'citrus fruit'} -> {'beef'}
+  Support: 0.0157, Confidence: 0.1692, Lift: 2.8205, Leverage: 0.0101, Conviction: 1.1315
+============================================================
+Rule: {'beef'} -> {'citrus fruit'}
+  Support: 0.0157, Confidence: 0.2619, Lift: 2.8205, Leverage: 0.0101, Conviction: 1.2290
+============================================================
+Rule: {'citrus fruit'} -> {'fruit/vegetable juice'}
+  Support: 0.0129, Confidence: 0.1385, Lift: 2.1070, Leverage: 0.0068, Conviction: 1.0844
+============================================================
+Rule: {'fruit/vegetable juice'} -> {'citrus fruit'}
+  Support: 0.0129, Confidence: 0.1957, Lift: 2.1070, Leverage: 0.0068, Conviction: 1.1278
+============================================================
+Rule: {'sugar'} -> {'citrus fruit'}
+  Support: 0.0129, Confidence: 0.3214, Lift: 3.4615, Leverage: 0.0091, Conviction: 1.3368
+============================================================
+Rule: {'citrus fruit'} -> {'sugar'}
+  Support: 0.0129, Confidence: 0.1385, Lift: 3.4615, Leverage: 0.0091, Conviction: 1.1143
+============================================================
+Rule: {'citrus fruit'} -> {'butter milk'}
+  Support: 0.0100, Confidence: 0.1077, Lift: 3.2776, Leverage: 0.0069, Conviction: 1.0839
+============================================================
+Rule: {'butter milk'} -> {'citrus fruit'}
+  Support: 0.0100, Confidence: 0.3043, Lift: 3.2776, Leverage: 0.0069, Conviction: 1.3040
+============================================================
+Rule: {'berries'} -> {'citrus fruit'}
+  Support: 0.0100, Confidence: 0.2500, Lift: 2.6923, Leverage: 0.0063, Conviction: 1.2095
+============================================================
+Rule: {'citrus fruit'} -> {'berries'}
+  Support: 0.0100, Confidence: 0.1077, Lift: 2.6923, Leverage: 0.0063, Conviction: 1.0759
+============================================================
+Rule: {'tropical fruit'} -> {'yogurt'}
+  Support: 0.0214, Confidence: 0.2308, Lift: 1.9943, Leverage: 0.0107, Conviction: 1.1496
+============================================================
+Rule: {'yogurt'} -> {'tropical fruit'}
+  Support: 0.0214, Confidence: 0.1852, Lift: 1.9943, Leverage: 0.0107, Conviction: 1.1133
+============================================================
+Rule: {'whole milk'} -> {'yogurt'}
+  Support: 0.0443, Confidence: 0.1761, Lift: 1.5222, Leverage: 0.0152, Conviction: 1.0733
+============================================================
+Rule: {'yogurt'} -> {'whole milk'}
+  Support: 0.0443, Confidence: 0.3827, Lift: 1.5222, Leverage: 0.0152, Conviction: 1.2127
+============================================================
+Rule: {'other vegetables'} -> {'yogurt'}
+  Support: 0.0314, Confidence: 0.1705, Lift: 1.4738, Leverage: 0.0101, Conviction: 1.0661
+============================================================
+Rule: {'yogurt'} -> {'other vegetables'}
+  Support: 0.0314, Confidence: 0.2716, Lift: 1.4738, Leverage: 0.0101, Conviction: 1.1199
+============================================================
+Rule: {'rolls/buns'} -> {'yogurt'}
+  Support: 0.0314, Confidence: 0.1438, Lift: 1.2426, Leverage: 0.0061, Conviction: 1.0328
+============================================================
+Rule: {'yogurt'} -> {'rolls/buns'}
+  Support: 0.0314, Confidence: 0.2716, Lift: 1.2426, Leverage: 0.0061, Conviction: 1.0728
+============================================================
+Rule: {'bottled water'} -> {'yogurt'}
+  Support: 0.0300, Confidence: 0.2187, Lift: 1.8904, Leverage: 0.0141, Conviction: 1.1319
+============================================================
+Rule: {'yogurt'} -> {'bottled water'}
+  Support: 0.0300, Confidence: 0.2593, Lift: 1.8904, Leverage: 0.0141, Conviction: 1.1649
+============================================================
+Rule: {'curd'} -> {'yogurt'}
+  Support: 0.0243, Confidence: 0.3269, Lift: 2.8253, Leverage: 0.0157, Conviction: 1.3138
+============================================================
+Rule: {'yogurt'} -> {'curd'}
+  Support: 0.0243, Confidence: 0.2099, Lift: 2.8253, Leverage: 0.0157, Conviction: 1.1716
+============================================================
+Rule: {'soda'} -> {'yogurt'}
+  Support: 0.0257, Confidence: 0.1607, Lift: 1.3889, Leverage: 0.0072, Conviction: 1.0536
+============================================================
+Rule: {'yogurt'} -> {'soda'}
+  Support: 0.0257, Confidence: 0.2222, Lift: 1.3889, Leverage: 0.0072, Conviction: 1.0800
+============================================================
+Rule: {'fruit/vegetable juice'} -> {'yogurt'}
+  Support: 0.0171, Confidence: 0.2609, Lift: 2.2544, Leverage: 0.0095, Conviction: 1.1964
+============================================================
+Rule: {'yogurt'} -> {'fruit/vegetable juice'}
+  Support: 0.0171, Confidence: 0.1481, Lift: 2.2544, Leverage: 0.0095, Conviction: 1.0968
+============================================================
+Rule: {'root vegetables'} -> {'yogurt'}
+  Support: 0.0171, Confidence: 0.1690, Lift: 1.4606, Leverage: 0.0054, Conviction: 1.0641
+============================================================
+Rule: {'yogurt'} -> {'root vegetables'}
+  Support: 0.0171, Confidence: 0.1481, Lift: 1.4606, Leverage: 0.0054, Conviction: 1.0548
+============================================================
+Rule: {'sausage'} -> {'yogurt'}
+  Support: 0.0214, Confidence: 0.2632, Lift: 2.2742, Leverage: 0.0120, Conviction: 1.2001
+============================================================
+Rule: {'yogurt'} -> {'sausage'}
+  Support: 0.0214, Confidence: 0.1852, Lift: 2.2742, Leverage: 0.0120, Conviction: 1.1273
+============================================================
+Rule: {'brown bread'} -> {'yogurt'}
+  Support: 0.0129, Confidence: 0.2647, Lift: 2.2876, Leverage: 0.0072, Conviction: 1.2026
+============================================================
+Rule: {'yogurt'} -> {'brown bread'}
+  Support: 0.0129, Confidence: 0.1111, Lift: 2.2876, Leverage: 0.0072, Conviction: 1.0704
+============================================================
+Rule: {'napkins'} -> {'yogurt'}
+  Support: 0.0100, Confidence: 0.2414, Lift: 2.0860, Leverage: 0.0052, Conviction: 1.1656
+============================================================
+Rule: {'shopping bags'} -> {'coffee'}
+  Support: 0.0100, Confidence: 0.1429, Lift: 2.1277, Leverage: 0.0053, Conviction: 1.0883
+============================================================
+Rule: {'coffee'} -> {'shopping bags'}
+  Support: 0.0100, Confidence: 0.1489, Lift: 2.1277, Leverage: 0.0053, Conviction: 1.0927
+============================================================
+Rule: {'whole milk'} -> {'tropical fruit'}
+  Support: 0.0357, Confidence: 0.1420, Lift: 1.5297, Leverage: 0.0124, Conviction: 1.0573
+============================================================
+Rule: {'tropical fruit'} -> {'whole milk'}
+  Support: 0.0357, Confidence: 0.3846, Lift: 1.5297, Leverage: 0.0124, Conviction: 1.2164
+============================================================
+Rule: {'pip fruit'} -> {'tropical fruit'}
+  Support: 0.0114, Confidence: 0.2500, Lift: 2.6923, Leverage: 0.0072, Conviction: 1.2095
+============================================================
+Rule: {'tropical fruit'} -> {'pip fruit'}
+  Support: 0.0114, Confidence: 0.1231, Lift: 2.6923, Leverage: 0.0072, Conviction: 1.0882
+============================================================
+Rule: {'other vegetables'} -> {'tropical fruit'}
+  Support: 0.0314, Confidence: 0.1705, Lift: 1.8366, Leverage: 0.0143, Conviction: 1.0937
+============================================================
+Rule: {'tropical fruit'} -> {'other vegetables'}
+  Support: 0.0314, Confidence: 0.3385, Lift: 1.8366, Leverage: 0.0143, Conviction: 1.2331
+============================================================
+Rule: {'bottled water'} -> {'tropical fruit'}
+  Support: 0.0186, Confidence: 0.1354, Lift: 1.4583, Leverage: 0.0058, Conviction: 1.0492
+============================================================
+Rule: {'tropical fruit'} -> {'bottled water'}
+  Support: 0.0186, Confidence: 0.2000, Lift: 1.4583, Leverage: 0.0058, Conviction: 1.0786
+============================================================
+Rule: {'curd'} -> {'tropical fruit'}
+  Support: 0.0143, Confidence: 0.1923, Lift: 2.0710, Leverage: 0.0074, Conviction: 1.1231
+============================================================
+Rule: {'tropical fruit'} -> {'curd'}
+  Support: 0.0143, Confidence: 0.1538, Lift: 2.0710, Leverage: 0.0074, Conviction: 1.0940
+============================================================
+Rule: {'candy'} -> {'tropical fruit'}
+  Support: 0.0114, Confidence: 0.4211, Lift: 4.5344, Leverage: 0.0089, Conviction: 1.5669
+============================================================
+Rule: {'tropical fruit'} -> {'candy'}
+  Support: 0.0114, Confidence: 0.1231, Lift: 4.5344, Leverage: 0.0089, Conviction: 1.1094
+============================================================
+Rule: {'root vegetables'} -> {'tropical fruit'}
+  Support: 0.0243, Confidence: 0.2394, Lift: 2.5785, Leverage: 0.0149, Conviction: 1.1927
+============================================================
+Rule: {'tropical fruit'} -> {'root vegetables'}
+  Support: 0.0243, Confidence: 0.2615, Lift: 2.5785, Leverage: 0.0149, Conviction: 1.2168
+============================================================
+Rule: {'domestic eggs'} -> {'tropical fruit'}
+  Support: 0.0129, Confidence: 0.2903, Lift: 3.1266, Leverage: 0.0087, Conviction: 1.2782
+============================================================
+Rule: {'tropical fruit'} -> {'domestic eggs'}
+  Support: 0.0129, Confidence: 0.1385, Lift: 3.1266, Leverage: 0.0087, Conviction: 1.1093
+============================================================
+Rule: {'pip fruit'} -> {'whole milk'}
+  Support: 0.0229, Confidence: 0.5000, Lift: 1.9886, Leverage: 0.0114, Conviction: 1.4971
+============================================================
+Rule: {'other vegetables'} -> {'whole milk'}
+  Support: 0.0643, Confidence: 0.3488, Lift: 1.3874, Leverage: 0.0180, Conviction: 1.1496
+============================================================
+Rule: {'whole milk'} -> {'other vegetables'}
+  Support: 0.0643, Confidence: 0.2557, Lift: 1.3874, Leverage: 0.0180, Conviction: 1.0959
+============================================================
+Rule: {'butter'} -> {'whole milk'}
+  Support: 0.0171, Confidence: 0.4286, Lift: 1.7045, Leverage: 0.0071, Conviction: 1.3100
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk'}
+  Support: 0.0643, Confidence: 0.2941, Lift: 1.1698, Leverage: 0.0093, Conviction: 1.0605
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns'}
+  Support: 0.0643, Confidence: 0.2557, Lift: 1.1698, Leverage: 0.0093, Conviction: 1.0499
+============================================================
+Rule: {'cereals'} -> {'whole milk'}
+  Support: 0.0100, Confidence: 0.8750, Lift: 3.4801, Leverage: 0.0071, Conviction: 5.9886
+============================================================
+Rule: {'curd'} -> {'whole milk'}
+  Support: 0.0314, Confidence: 0.4231, Lift: 1.6827, Leverage: 0.0128, Conviction: 1.2975
+============================================================
+Rule: {'whole milk'} -> {'curd'}
+  Support: 0.0314, Confidence: 0.1250, Lift: 1.6827, Leverage: 0.0128, Conviction: 1.0580
+============================================================
+Rule: {'beef'} -> {'whole milk'}
+  Support: 0.0229, Confidence: 0.3810, Lift: 1.5152, Leverage: 0.0078, Conviction: 1.2092
+============================================================
+Rule: {'whole milk'} -> {'fruit/vegetable juice'}
+  Support: 0.0257, Confidence: 0.1023, Lift: 1.5563, Leverage: 0.0092, Conviction: 1.0407
+============================================================
+Rule: {'fruit/vegetable juice'} -> {'whole milk'}
+  Support: 0.0257, Confidence: 0.3913, Lift: 1.5563, Leverage: 0.0092, Conviction: 1.2298
+============================================================
+Rule: {'sugar'} -> {'whole milk'}
+  Support: 0.0171, Confidence: 0.4286, Lift: 1.7045, Leverage: 0.0071, Conviction: 1.3100
+============================================================
+Rule: {'root vegetables'} -> {'whole milk'}
+  Support: 0.0443, Confidence: 0.4366, Lift: 1.7366, Leverage: 0.0188, Conviction: 1.3287
+============================================================
+Rule: {'whole milk'} -> {'root vegetables'}
+  Support: 0.0443, Confidence: 0.1761, Lift: 1.7366, Leverage: 0.0188, Conviction: 1.0907
+============================================================
+Rule: {'frozen dessert'} -> {'whole milk'}
+  Support: 0.0114, Confidence: 0.8000, Lift: 3.1818, Leverage: 0.0078, Conviction: 3.7429
+============================================================
+Rule: {'waffles'} -> {'whole milk'}
+  Support: 0.0129, Confidence: 0.5000, Lift: 1.9886, Leverage: 0.0064, Conviction: 1.4971
+============================================================
+Rule: {'whole milk'} -> {'sausage'}
+  Support: 0.0271, Confidence: 0.1080, Lift: 1.3258, Leverage: 0.0067, Conviction: 1.0297
+============================================================
+Rule: {'sausage'} -> {'whole milk'}
+  Support: 0.0271, Confidence: 0.3333, Lift: 1.3258, Leverage: 0.0067, Conviction: 1.1229
+============================================================
+Rule: {'brown bread'} -> {'whole milk'}
+  Support: 0.0186, Confidence: 0.3824, Lift: 1.5207, Leverage: 0.0064, Conviction: 1.2120
+============================================================
+Rule: {'hamburger meat'} -> {'whole milk'}
+  Support: 0.0200, Confidence: 0.4667, Lift: 1.8561, Leverage: 0.0092, Conviction: 1.4036
+============================================================
+Rule: {'pork'} -> {'whole milk'}
+  Support: 0.0186, Confidence: 0.4643, Lift: 1.8466, Leverage: 0.0085, Conviction: 1.3973
+============================================================
+Rule: {'whipped/sour cream'} -> {'whole milk'}
+  Support: 0.0243, Confidence: 0.4474, Lift: 1.7793, Leverage: 0.0106, Conviction: 1.3546
+============================================================
+Rule: {'domestic eggs'} -> {'whole milk'}
+  Support: 0.0200, Confidence: 0.4516, Lift: 1.7962, Leverage: 0.0089, Conviction: 1.3650
+============================================================
+Rule: {'ham'} -> {'whole milk'}
+  Support: 0.0143, Confidence: 0.6250, Lift: 2.4858, Leverage: 0.0085, Conviction: 1.9962
+============================================================
+Rule: {'frozen vegetables'} -> {'whole milk'}
+  Support: 0.0171, Confidence: 0.4000, Lift: 1.5909, Leverage: 0.0064, Conviction: 1.2476
+============================================================
+Rule: {'sliced cheese'} -> {'whole milk'}
+  Support: 0.0114, Confidence: 0.4706, Lift: 1.8717, Leverage: 0.0053, Conviction: 1.4140
+============================================================
+Rule: {'pip fruit'} -> {'curd'}
+  Support: 0.0100, Confidence: 0.2188, Lift: 2.9447, Leverage: 0.0066, Conviction: 1.1849
+============================================================
+Rule: {'curd'} -> {'pip fruit'}
+  Support: 0.0100, Confidence: 0.1346, Lift: 2.9447, Leverage: 0.0066, Conviction: 1.1027
+============================================================
+Rule: {'rolls/buns'} -> {'other vegetables'}
+  Support: 0.0471, Confidence: 0.2157, Lift: 1.1704, Leverage: 0.0069, Conviction: 1.0400
+============================================================
+Rule: {'other vegetables'} -> {'rolls/buns'}
+  Support: 0.0471, Confidence: 0.2558, Lift: 1.1704, Leverage: 0.0069, Conviction: 1.0500
+============================================================
+Rule: {'bottled water'} -> {'other vegetables'}
+  Support: 0.0371, Confidence: 0.2708, Lift: 1.4696, Leverage: 0.0119, Conviction: 1.1187
+============================================================
+Rule: {'other vegetables'} -> {'bottled water'}
+  Support: 0.0371, Confidence: 0.2016, Lift: 1.4696, Leverage: 0.0119, Conviction: 1.0807
+============================================================
+Rule: {'curd'} -> {'other vegetables'}
+  Support: 0.0214, Confidence: 0.2885, Lift: 1.5653, Leverage: 0.0077, Conviction: 1.1464
+============================================================
+Rule: {'other vegetables'} -> {'curd'}
+  Support: 0.0214, Confidence: 0.1163, Lift: 1.5653, Leverage: 0.0077, Conviction: 1.0475
+============================================================
+Rule: {'sugar'} -> {'other vegetables'}
+  Support: 0.0143, Confidence: 0.3571, Lift: 1.9380, Leverage: 0.0069, Conviction: 1.2689
+============================================================
+Rule: {'root vegetables'} -> {'other vegetables'}
+  Support: 0.0429, Confidence: 0.4225, Lift: 2.2928, Leverage: 0.0242, Conviction: 1.4126
+============================================================
+Rule: {'other vegetables'} -> {'root vegetables'}
+  Support: 0.0429, Confidence: 0.2326, Lift: 2.2928, Leverage: 0.0242, Conviction: 1.1709
+============================================================
+Rule: {'hamburger meat'} -> {'other vegetables'}
+  Support: 0.0143, Confidence: 0.3333, Lift: 1.8088, Leverage: 0.0064, Conviction: 1.2236
+============================================================
+Rule: {'pork'} -> {'other vegetables'}
+  Support: 0.0157, Confidence: 0.3929, Lift: 2.1318, Leverage: 0.0083, Conviction: 1.3435
+============================================================
+Rule: {'whipped/sour cream'} -> {'other vegetables'}
+  Support: 0.0200, Confidence: 0.3684, Lift: 1.9992, Leverage: 0.0100, Conviction: 1.2915
+============================================================
+Rule: {'other vegetables'} -> {'whipped/sour cream'}
+  Support: 0.0200, Confidence: 0.1085, Lift: 1.9992, Leverage: 0.0100, Conviction: 1.0608
+============================================================
+Rule: {'ham'} -> {'other vegetables'}
+  Support: 0.0100, Confidence: 0.4375, Lift: 2.3740, Leverage: 0.0058, Conviction: 1.4502
+============================================================
+Rule: {'frozen vegetables'} -> {'other vegetables'}
+  Support: 0.0143, Confidence: 0.3333, Lift: 1.8088, Leverage: 0.0064, Conviction: 1.2236
+============================================================
+Rule: {'meat'} -> {'other vegetables'}
+  Support: 0.0100, Confidence: 0.4667, Lift: 2.5323, Leverage: 0.0061, Conviction: 1.5295
+============================================================
+Rule: {'root vegetables'} -> {'butter'}
+  Support: 0.0129, Confidence: 0.1268, Lift: 3.1690, Leverage: 0.0088, Conviction: 1.0994
+============================================================
+Rule: {'butter'} -> {'root vegetables'}
+  Support: 0.0129, Confidence: 0.3214, Lift: 3.1690, Leverage: 0.0088, Conviction: 1.3242
+============================================================
+Rule: {'whipped/sour cream'} -> {'butter'}
+  Support: 0.0100, Confidence: 0.1842, Lift: 4.6053, Leverage: 0.0078, Conviction: 1.1768
+============================================================
+Rule: {'butter'} -> {'whipped/sour cream'}
+  Support: 0.0100, Confidence: 0.2500, Lift: 4.6053, Leverage: 0.0078, Conviction: 1.2610
+============================================================
+Rule: {'bottled water'} -> {'rolls/buns'}
+  Support: 0.0357, Confidence: 0.2604, Lift: 1.1914, Leverage: 0.0057, Conviction: 1.0566
+============================================================
+Rule: {'rolls/buns'} -> {'bottled water'}
+  Support: 0.0357, Confidence: 0.1634, Lift: 1.1914, Leverage: 0.0057, Conviction: 1.0314
+============================================================
+Rule: {'curd'} -> {'rolls/buns'}
+  Support: 0.0229, Confidence: 0.3077, Lift: 1.4077, Leverage: 0.0066, Conviction: 1.1287
+============================================================
+Rule: {'rolls/buns'} -> {'curd'}
+  Support: 0.0229, Confidence: 0.1046, Lift: 1.4077, Leverage: 0.0066, Conviction: 1.0338
+============================================================
+Rule: {'rolls/buns'} -> {'beef'}
+  Support: 0.0243, Confidence: 0.1111, Lift: 1.8519, Leverage: 0.0112, Conviction: 1.0575
+============================================================
+Rule: {'beef'} -> {'rolls/buns'}
+  Support: 0.0243, Confidence: 0.4048, Lift: 1.8519, Leverage: 0.0112, Conviction: 1.3128
+============================================================
+Rule: {'rolls/buns'} -> {'soda'}
+  Support: 0.0471, Confidence: 0.2157, Lift: 1.3480, Leverage: 0.0122, Conviction: 1.0710
+============================================================
+Rule: {'soda'} -> {'rolls/buns'}
+  Support: 0.0471, Confidence: 0.2946, Lift: 1.3480, Leverage: 0.0122, Conviction: 1.1078
+============================================================
+Rule: {'rolls/buns'} -> {'frankfurter'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 2.2876, Leverage: 0.0193, Conviction: 1.1047
+============================================================
+Rule: {'frankfurter'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 0.5000, Lift: 2.2876, Leverage: 0.0193, Conviction: 1.5629
+============================================================
+Rule: {'butter milk'} -> {'rolls/buns'}
+  Support: 0.0129, Confidence: 0.3913, Lift: 1.7903, Leverage: 0.0057, Conviction: 1.2838
+============================================================
+Rule: {'rolls/buns'} -> {'pastry'}
+  Support: 0.0243, Confidence: 0.1111, Lift: 1.4403, Leverage: 0.0074, Conviction: 1.0382
+============================================================
+Rule: {'pastry'} -> {'rolls/buns'}
+  Support: 0.0243, Confidence: 0.3148, Lift: 1.4403, Leverage: 0.0074, Conviction: 1.1405
+============================================================
+Rule: {'rolls/buns'} -> {'sausage'}
+  Support: 0.0400, Confidence: 0.1830, Lift: 2.2474, Leverage: 0.0222, Conviction: 1.1243
+============================================================
+Rule: {'sausage'} -> {'rolls/buns'}
+  Support: 0.0400, Confidence: 0.4912, Lift: 2.2474, Leverage: 0.0222, Conviction: 1.5359
+============================================================
+Rule: {'napkins'} -> {'rolls/buns'}
+  Support: 0.0143, Confidence: 0.3448, Lift: 1.5776, Leverage: 0.0052, Conviction: 1.1927
+============================================================
+Rule: {'hygiene articles'} -> {'rolls/buns'}
+  Support: 0.0171, Confidence: 0.3636, Lift: 1.6637, Leverage: 0.0068, Conviction: 1.2280
+============================================================
+Rule: {'whipped/sour cream'} -> {'rolls/buns'}
+  Support: 0.0200, Confidence: 0.3684, Lift: 1.6856, Leverage: 0.0081, Conviction: 1.2373
+============================================================
+Rule: {'ham'} -> {'rolls/buns'}
+  Support: 0.0100, Confidence: 0.4375, Lift: 2.0016, Leverage: 0.0050, Conviction: 1.3892
+============================================================
+Rule: {'sliced cheese'} -> {'rolls/buns'}
+  Support: 0.0143, Confidence: 0.5882, Lift: 2.6913, Leverage: 0.0090, Conviction: 1.8978
+============================================================
+Rule: {'bottled beer'} -> {'bottled water'}
+  Support: 0.0143, Confidence: 0.2222, Lift: 1.6204, Leverage: 0.0055, Conviction: 1.1094
+============================================================
+Rule: {'bottled water'} -> {'bottled beer'}
+  Support: 0.0143, Confidence: 0.1042, Lift: 1.6204, Leverage: 0.0055, Conviction: 1.0445
+============================================================
+Rule: {'bottled water'} -> {'soda'}
+  Support: 0.0286, Confidence: 0.2083, Lift: 1.3021, Leverage: 0.0066, Conviction: 1.0611
+============================================================
+Rule: {'soda'} -> {'bottled water'}
+  Support: 0.0286, Confidence: 0.1786, Lift: 1.3021, Leverage: 0.0066, Conviction: 1.0504
+============================================================
+Rule: {'napkins'} -> {'bottled water'}
+  Support: 0.0129, Confidence: 0.3103, Lift: 2.2629, Leverage: 0.0072, Conviction: 1.2511
+============================================================
+Rule: {'chocolate'} -> {'soda'}
+  Support: 0.0129, Confidence: 0.4286, Lift: 2.6786, Leverage: 0.0081, Conviction: 1.4700
+============================================================
+Rule: {'root vegetables'} -> {'curd'}
+  Support: 0.0129, Confidence: 0.1268, Lift: 1.7064, Leverage: 0.0053, Conviction: 1.0601
+============================================================
+Rule: {'curd'} -> {'root vegetables'}
+  Support: 0.0129, Confidence: 0.1731, Lift: 1.7064, Leverage: 0.0053, Conviction: 1.0866
+============================================================
+Rule: {'hygiene articles'} -> {'curd'}
+  Support: 0.0100, Confidence: 0.2121, Lift: 2.8555, Leverage: 0.0065, Conviction: 1.1749
+============================================================
+Rule: {'curd'} -> {'hygiene articles'}
+  Support: 0.0100, Confidence: 0.1346, Lift: 2.8555, Leverage: 0.0065, Conviction: 1.1011
+============================================================
+Rule: {'whipped/sour cream'} -> {'curd'}
+  Support: 0.0114, Confidence: 0.2105, Lift: 2.8340, Leverage: 0.0074, Conviction: 1.1726
+============================================================
+Rule: {'curd'} -> {'whipped/sour cream'}
+  Support: 0.0114, Confidence: 0.1538, Lift: 2.8340, Leverage: 0.0074, Conviction: 1.1177
+============================================================
+Rule: {'curd'} -> {'dessert'}
+  Support: 0.0100, Confidence: 0.1346, Lift: 4.7115, Leverage: 0.0079, Conviction: 1.1225
+============================================================
+Rule: {'dessert'} -> {'curd'}
+  Support: 0.0100, Confidence: 0.3500, Lift: 4.7115, Leverage: 0.0079, Conviction: 1.4242
+============================================================
+Rule: {'root vegetables'} -> {'beef'}
+  Support: 0.0143, Confidence: 0.1408, Lift: 2.3474, Leverage: 0.0082, Conviction: 1.0941
+============================================================
+Rule: {'beef'} -> {'root vegetables'}
+  Support: 0.0143, Confidence: 0.2381, Lift: 2.3474, Leverage: 0.0082, Conviction: 1.1794
+============================================================
+Rule: {'berries'} -> {'beef'}
+  Support: 0.0100, Confidence: 0.2500, Lift: 4.1667, Leverage: 0.0076, Conviction: 1.2533
+============================================================
+Rule: {'beef'} -> {'berries'}
+  Support: 0.0100, Confidence: 0.1667, Lift: 4.1667, Leverage: 0.0076, Conviction: 1.1520
+============================================================
+Rule: {'sugar'} -> {'soda'}
+  Support: 0.0129, Confidence: 0.3214, Lift: 2.0089, Leverage: 0.0065, Conviction: 1.2379
+============================================================
+Rule: {'waffles'} -> {'soda'}
+  Support: 0.0100, Confidence: 0.3889, Lift: 2.4306, Leverage: 0.0059, Conviction: 1.3745
+============================================================
+Rule: {'soda'} -> {'sausage'}
+  Support: 0.0200, Confidence: 0.1250, Lift: 1.5351, Leverage: 0.0070, Conviction: 1.0498
+============================================================
+Rule: {'sausage'} -> {'soda'}
+  Support: 0.0200, Confidence: 0.2456, Lift: 1.5351, Leverage: 0.0070, Conviction: 1.1135
+============================================================
+Rule: {'shopping bags'} -> {'soda'}
+  Support: 0.0171, Confidence: 0.2449, Lift: 1.5306, Leverage: 0.0059, Conviction: 1.1124
+============================================================
+Rule: {'soda'} -> {'shopping bags'}
+  Support: 0.0171, Confidence: 0.1071, Lift: 1.5306, Leverage: 0.0059, Conviction: 1.0416
+============================================================
+Rule: {'napkins'} -> {'soda'}
+  Support: 0.0129, Confidence: 0.3103, Lift: 1.9397, Leverage: 0.0062, Conviction: 1.2180
+============================================================
+Rule: {'misc. beverages'} -> {'soda'}
+  Support: 0.0100, Confidence: 0.3684, Lift: 2.3026, Leverage: 0.0057, Conviction: 1.3300
+============================================================
+Rule: {'sugar'} -> {'frankfurter'}
+  Support: 0.0100, Confidence: 0.2500, Lift: 3.6458, Leverage: 0.0073, Conviction: 1.2419
+============================================================
+Rule: {'frankfurter'} -> {'sugar'}
+  Support: 0.0100, Confidence: 0.1458, Lift: 3.6458, Leverage: 0.0073, Conviction: 1.1239
+============================================================
+Rule: {'root vegetables'} -> {'frankfurter'}
+  Support: 0.0157, Confidence: 0.1549, Lift: 2.2594, Leverage: 0.0088, Conviction: 1.1022
+============================================================
+Rule: {'frankfurter'} -> {'root vegetables'}
+  Support: 0.0157, Confidence: 0.2292, Lift: 2.2594, Leverage: 0.0088, Conviction: 1.1657
+============================================================
+Rule: {'sausage'} -> {'frankfurter'}
+  Support: 0.0157, Confidence: 0.1930, Lift: 2.8143, Leverage: 0.0101, Conviction: 1.1542
+============================================================
+Rule: {'frankfurter'} -> {'sausage'}
+  Support: 0.0157, Confidence: 0.2292, Lift: 2.8143, Leverage: 0.0101, Conviction: 1.1917
+============================================================
+Rule: {'oil'} -> {'newspapers'}
+  Support: 0.0100, Confidence: 0.3500, Lift: 4.8039, Leverage: 0.0079, Conviction: 1.4264
+============================================================
+Rule: {'newspapers'} -> {'oil'}
+  Support: 0.0100, Confidence: 0.1373, Lift: 4.8039, Leverage: 0.0079, Conviction: 1.1260
+============================================================
+Rule: {'root vegetables'} -> {'detergent'}
+  Support: 0.0114, Confidence: 0.1127, Lift: 3.7559, Leverage: 0.0084, Conviction: 1.0932
+============================================================
+Rule: {'detergent'} -> {'root vegetables'}
+  Support: 0.0114, Confidence: 0.3810, Lift: 3.7559, Leverage: 0.0084, Conviction: 1.4515
+============================================================
+Rule: {'root vegetables'} -> {'hamburger meat'}
+  Support: 0.0114, Confidence: 0.1127, Lift: 2.6291, Leverage: 0.0071, Conviction: 1.0787
+============================================================
+Rule: {'hamburger meat'} -> {'root vegetables'}
+  Support: 0.0114, Confidence: 0.2667, Lift: 2.6291, Leverage: 0.0071, Conviction: 1.2253
+============================================================
+Rule: {'berries'} -> {'root vegetables'}
+  Support: 0.0129, Confidence: 0.3214, Lift: 3.1690, Leverage: 0.0088, Conviction: 1.3242
+============================================================
+Rule: {'root vegetables'} -> {'berries'}
+  Support: 0.0129, Confidence: 0.1268, Lift: 3.1690, Leverage: 0.0088, Conviction: 1.0994
+============================================================
+Rule: {'whipped/sour cream'} -> {'root vegetables'}
+  Support: 0.0129, Confidence: 0.2368, Lift: 2.3351, Leverage: 0.0074, Conviction: 1.1774
+============================================================
+Rule: {'root vegetables'} -> {'whipped/sour cream'}
+  Support: 0.0129, Confidence: 0.1268, Lift: 2.3351, Leverage: 0.0074, Conviction: 1.0830
+============================================================
+Rule: {'root vegetables'} -> {'domestic eggs'}
+  Support: 0.0129, Confidence: 0.1268, Lift: 2.8623, Leverage: 0.0084, Conviction: 1.0944
+============================================================
+Rule: {'domestic eggs'} -> {'root vegetables'}
+  Support: 0.0129, Confidence: 0.2903, Lift: 2.8623, Leverage: 0.0084, Conviction: 1.2662
+============================================================
+Rule: {'root vegetables'} -> {'frozen vegetables'}
+  Support: 0.0114, Confidence: 0.1127, Lift: 2.6291, Leverage: 0.0071, Conviction: 1.0787
+============================================================
+Rule: {'frozen vegetables'} -> {'root vegetables'}
+  Support: 0.0114, Confidence: 0.2667, Lift: 2.6291, Leverage: 0.0071, Conviction: 1.2253
+============================================================
+Rule: {'shopping bags'} -> {'sausage'}
+  Support: 0.0114, Confidence: 0.1633, Lift: 2.0050, Leverage: 0.0057, Conviction: 1.0978
+============================================================
+Rule: {'sausage'} -> {'shopping bags'}
+  Support: 0.0114, Confidence: 0.1404, Lift: 2.0050, Leverage: 0.0057, Conviction: 1.0818
+============================================================
+Rule: {'hygiene articles'} -> {'napkins'}
+  Support: 0.0143, Confidence: 0.3030, Lift: 7.3145, Leverage: 0.0123, Conviction: 1.3753
+============================================================
+Rule: {'napkins'} -> {'hygiene articles'}
+  Support: 0.0143, Confidence: 0.3448, Lift: 7.3145, Leverage: 0.0123, Conviction: 1.4544
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'margarine'}
+  Support: 0.0386, Confidence: 0.1765, Lift: 6.8627, Leverage: 0.0330, Conviction: 1.1831
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'margarine'}
+  Support: 0.0386, Confidence: 0.1534, Lift: 8.9489, Leverage: 0.0343, Conviction: 1.1610
+============================================================
+Rule: {'margarine'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0386, Confidence: 0.7500, Lift: 11.6667, Leverage: 0.0353, Conviction: 3.7429
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'margarine'}
+  Support: 0.0386, Confidence: 0.6000, Lift: 11.6667, Leverage: 0.0353, Conviction: 2.3714
+============================================================
+Rule: {'rolls/buns', 'margarine'} -> {'whole milk'}
+  Support: 0.0386, Confidence: 2.2500, Lift: 8.9489, Leverage: 0.0343, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'margarine'} -> {'rolls/buns'}
+  Support: 0.0386, Confidence: 1.5000, Lift: 6.8627, Leverage: 0.0330, Conviction: 1000000.0000
+============================================================
+Rule: {'other vegetables'} -> {'citrus fruit', 'whole milk'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 5.4264, Leverage: 0.0245, Conviction: 1.1586
+============================================================
+Rule: {'citrus fruit'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.3231, Lift: 5.0256, Leverage: 0.0240, Conviction: 1.3823
+============================================================
+Rule: {'whole milk'} -> {'citrus fruit', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 4.3959, Leverage: 0.0232, Conviction: 1.1047
+============================================================
+Rule: {'citrus fruit', 'other vegetables'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 1.1053, Lift: 4.3959, Leverage: 0.0232, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'citrus fruit'}
+  Support: 0.0300, Confidence: 0.4667, Lift: 5.0256, Leverage: 0.0240, Conviction: 1.7009
+============================================================
+Rule: {'citrus fruit', 'whole milk'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 1.0000, Lift: 5.4264, Leverage: 0.0245, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns'} -> {'citrus fruit', 'whole milk'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 5.2288, Leverage: 0.0277, Conviction: 1.1505
+============================================================
+Rule: {'citrus fruit'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0343, Confidence: 0.3692, Lift: 5.7436, Leverage: 0.0283, Conviction: 1.4834
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'citrus fruit'}
+  Support: 0.0343, Confidence: 0.1364, Lift: 5.0239, Leverage: 0.0275, Conviction: 1.1265
+============================================================
+Rule: {'rolls/buns', 'citrus fruit'} -> {'whole milk'}
+  Support: 0.0343, Confidence: 1.2632, Lift: 5.0239, Leverage: 0.0275, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'citrus fruit'}
+  Support: 0.0343, Confidence: 0.5333, Lift: 5.7436, Leverage: 0.0283, Conviction: 1.9439
+============================================================
+Rule: {'citrus fruit', 'whole milk'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 1.1429, Lift: 5.2288, Leverage: 0.0277, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns'} -> {'citrus fruit', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 5.0568, Leverage: 0.0241, Conviction: 1.1276
+============================================================
+Rule: {'citrus fruit'} -> {'rolls/buns', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.3231, Lift: 6.8531, Leverage: 0.0256, Conviction: 1.4076
+============================================================
+Rule: {'other vegetables'} -> {'rolls/buns', 'citrus fruit'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 5.9976, Leverage: 0.0250, Conviction: 1.1620
+============================================================
+Rule: {'rolls/buns', 'citrus fruit'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 1.1053, Lift: 5.9976, Leverage: 0.0250, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'other vegetables'} -> {'citrus fruit'}
+  Support: 0.0300, Confidence: 0.6364, Lift: 6.8531, Leverage: 0.0256, Conviction: 2.4946
+============================================================
+Rule: {'citrus fruit', 'other vegetables'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 1.1053, Lift: 5.0568, Leverage: 0.0241, Conviction: 1000000.0000
+============================================================
+Rule: {'tropical fruit'} -> {'whole milk', 'yogurt'}
+  Support: 0.0386, Confidence: 0.4154, Lift: 9.3797, Leverage: 0.0345, Conviction: 1.6348
+============================================================
+Rule: {'whole milk'} -> {'yogurt', 'tropical fruit'}
+  Support: 0.0386, Confidence: 0.1534, Lift: 7.1591, Leverage: 0.0332, Conviction: 1.1559
+============================================================
+Rule: {'yogurt'} -> {'whole milk', 'tropical fruit'}
+  Support: 0.0386, Confidence: 0.3333, Lift: 9.3333, Leverage: 0.0344, Conviction: 1.4464
+============================================================
+Rule: {'whole milk', 'tropical fruit'} -> {'yogurt'}
+  Support: 0.0386, Confidence: 1.0800, Lift: 9.3333, Leverage: 0.0344, Conviction: 1000000.0000
+============================================================
+Rule: {'yogurt', 'tropical fruit'} -> {'whole milk'}
+  Support: 0.0386, Confidence: 1.8000, Lift: 7.1591, Leverage: 0.0332, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'tropical fruit'}
+  Support: 0.0386, Confidence: 0.8710, Lift: 9.3797, Leverage: 0.0345, Conviction: 7.0304
+============================================================
+Rule: {'other vegetables'} -> {'whole milk', 'yogurt'}
+  Support: 0.0429, Confidence: 0.2326, Lift: 5.2513, Leverage: 0.0347, Conviction: 1.2453
+============================================================
+Rule: {'whole milk'} -> {'other vegetables', 'yogurt'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 5.4236, Leverage: 0.0350, Conviction: 1.1676
+============================================================
+Rule: {'yogurt'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0429, Confidence: 0.3704, Lift: 5.7613, Leverage: 0.0354, Conviction: 1.4861
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'yogurt'}
+  Support: 0.0429, Confidence: 0.6667, Lift: 5.7613, Leverage: 0.0354, Conviction: 2.6529
+============================================================
+Rule: {'other vegetables', 'yogurt'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 1.3636, Lift: 5.4236, Leverage: 0.0350, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'other vegetables'}
+  Support: 0.0429, Confidence: 0.9677, Lift: 5.2513, Leverage: 0.0347, Conviction: 25.2871
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'yogurt'}
+  Support: 0.0429, Confidence: 0.1961, Lift: 4.4276, Leverage: 0.0332, Conviction: 1.1888
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'yogurt'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 5.4236, Leverage: 0.0350, Conviction: 1.1676
+============================================================
+Rule: {'yogurt'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0429, Confidence: 0.3704, Lift: 5.7613, Leverage: 0.0354, Conviction: 1.4861
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'yogurt'}
+  Support: 0.0429, Confidence: 0.6667, Lift: 5.7613, Leverage: 0.0354, Conviction: 2.6529
+============================================================
+Rule: {'rolls/buns', 'yogurt'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 1.3636, Lift: 5.4236, Leverage: 0.0350, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'rolls/buns'}
+  Support: 0.0429, Confidence: 0.9677, Lift: 4.4276, Leverage: 0.0332, Conviction: 24.2243
+============================================================
+Rule: {'bottled water'} -> {'whole milk', 'yogurt'}
+  Support: 0.0343, Confidence: 0.2500, Lift: 5.6452, Leverage: 0.0282, Conviction: 1.2743
+============================================================
+Rule: {'whole milk'} -> {'bottled water', 'yogurt'}
+  Support: 0.0343, Confidence: 0.1364, Lift: 4.5455, Leverage: 0.0267, Conviction: 1.1232
+============================================================
+Rule: {'yogurt'} -> {'bottled water', 'whole milk'}
+  Support: 0.0343, Confidence: 0.2963, Lift: 8.6420, Leverage: 0.0303, Conviction: 1.3723
+============================================================
+Rule: {'bottled water', 'whole milk'} -> {'yogurt'}
+  Support: 0.0343, Confidence: 1.0000, Lift: 8.6420, Leverage: 0.0303, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water', 'yogurt'} -> {'whole milk'}
+  Support: 0.0343, Confidence: 1.1429, Lift: 4.5455, Leverage: 0.0267, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'bottled water'}
+  Support: 0.0343, Confidence: 0.7742, Lift: 5.6452, Leverage: 0.0282, Conviction: 3.8212
+============================================================
+Rule: {'curd'} -> {'whole milk', 'yogurt'}
+  Support: 0.0429, Confidence: 0.5769, Lift: 13.0273, Leverage: 0.0396, Conviction: 2.2590
+============================================================
+Rule: {'whole milk'} -> {'curd', 'yogurt'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 7.0187, Leverage: 0.0368, Conviction: 1.1762
+============================================================
+Rule: {'yogurt'} -> {'curd', 'whole milk'}
+  Support: 0.0429, Confidence: 0.3704, Lift: 11.7845, Leverage: 0.0392, Conviction: 1.5383
+============================================================
+Rule: {'curd', 'whole milk'} -> {'yogurt'}
+  Support: 0.0429, Confidence: 1.3636, Lift: 11.7845, Leverage: 0.0392, Conviction: 1000000.0000
+============================================================
+Rule: {'curd', 'yogurt'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 1.7647, Lift: 7.0187, Leverage: 0.0368, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'curd'}
+  Support: 0.0429, Confidence: 0.9677, Lift: 13.0273, Leverage: 0.0396, Conviction: 28.6971
+============================================================
+Rule: {'soda'} -> {'whole milk', 'yogurt'}
+  Support: 0.0343, Confidence: 0.2143, Lift: 4.8387, Leverage: 0.0272, Conviction: 1.2164
+============================================================
+Rule: {'whole milk'} -> {'soda', 'yogurt'}
+  Support: 0.0343, Confidence: 0.1364, Lift: 5.3030, Leverage: 0.0278, Conviction: 1.1281
+============================================================
+Rule: {'yogurt'} -> {'whole milk', 'soda'}
+  Support: 0.0343, Confidence: 0.2963, Lift: 7.6818, Leverage: 0.0298, Conviction: 1.3662
+============================================================
+Rule: {'whole milk', 'soda'} -> {'yogurt'}
+  Support: 0.0343, Confidence: 0.8889, Lift: 7.6818, Leverage: 0.0298, Conviction: 7.9586
+============================================================
+Rule: {'soda', 'yogurt'} -> {'whole milk'}
+  Support: 0.0343, Confidence: 1.3333, Lift: 5.3030, Leverage: 0.0278, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'soda'}
+  Support: 0.0343, Confidence: 0.7742, Lift: 4.8387, Leverage: 0.0272, Conviction: 3.7200
+============================================================
+Rule: {'whole milk'} -> {'fruit/vegetable juice', 'yogurt'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 9.9432, Leverage: 0.0385, Conviction: 1.1848
+============================================================
+Rule: {'fruit/vegetable juice'} -> {'whole milk', 'yogurt'}
+  Support: 0.0429, Confidence: 0.6522, Lift: 14.7265, Leverage: 0.0399, Conviction: 2.7477
+============================================================
+Rule: {'yogurt'} -> {'whole milk', 'fruit/vegetable juice'}
+  Support: 0.0429, Confidence: 0.3704, Lift: 14.4033, Leverage: 0.0399, Conviction: 1.5474
+============================================================
+Rule: {'whole milk', 'fruit/vegetable juice'} -> {'yogurt'}
+  Support: 0.0429, Confidence: 1.6667, Lift: 14.4033, Leverage: 0.0399, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'fruit/vegetable juice'}
+  Support: 0.0429, Confidence: 0.9677, Lift: 14.7265, Leverage: 0.0399, Conviction: 28.9629
+============================================================
+Rule: {'fruit/vegetable juice', 'yogurt'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 2.5000, Lift: 9.9432, Leverage: 0.0385, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables'} -> {'whole milk', 'yogurt'}
+  Support: 0.0300, Confidence: 0.2958, Lift: 6.6788, Leverage: 0.0255, Conviction: 1.3571
+============================================================
+Rule: {'whole milk'} -> {'root vegetables', 'yogurt'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 6.9602, Leverage: 0.0257, Conviction: 1.1160
+============================================================
+Rule: {'yogurt'} -> {'root vegetables', 'whole milk'}
+  Support: 0.0300, Confidence: 0.2593, Lift: 5.8542, Leverage: 0.0249, Conviction: 1.2902
+============================================================
+Rule: {'root vegetables', 'whole milk'} -> {'yogurt'}
+  Support: 0.0300, Confidence: 0.6774, Lift: 5.8542, Leverage: 0.0249, Conviction: 2.7413
+============================================================
+Rule: {'root vegetables', 'yogurt'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 1.7500, Lift: 6.9602, Leverage: 0.0257, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'root vegetables'}
+  Support: 0.0300, Confidence: 0.6774, Lift: 6.6788, Leverage: 0.0255, Conviction: 2.7856
+============================================================
+Rule: {'whole milk'} -> {'sausage', 'yogurt'}
+  Support: 0.0343, Confidence: 0.1364, Lift: 6.3636, Leverage: 0.0289, Conviction: 1.1331
+============================================================
+Rule: {'sausage'} -> {'whole milk', 'yogurt'}
+  Support: 0.0343, Confidence: 0.4211, Lift: 9.5076, Leverage: 0.0307, Conviction: 1.6508
+============================================================
+Rule: {'yogurt'} -> {'whole milk', 'sausage'}
+  Support: 0.0343, Confidence: 0.2963, Lift: 10.9162, Leverage: 0.0311, Conviction: 1.3825
+============================================================
+Rule: {'whole milk', 'sausage'} -> {'yogurt'}
+  Support: 0.0343, Confidence: 1.2632, Lift: 10.9162, Leverage: 0.0311, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'yogurt'} -> {'sausage'}
+  Support: 0.0343, Confidence: 0.7742, Lift: 9.5076, Leverage: 0.0307, Conviction: 4.0680
+============================================================
+Rule: {'sausage', 'yogurt'} -> {'whole milk'}
+  Support: 0.0343, Confidence: 1.6000, Lift: 6.3636, Leverage: 0.0289, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water'} -> {'rolls/buns', 'yogurt'}
+  Support: 0.0343, Confidence: 0.2500, Lift: 7.9545, Leverage: 0.0300, Conviction: 1.2914
+============================================================
+Rule: {'rolls/buns'} -> {'bottled water', 'yogurt'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 5.2288, Leverage: 0.0277, Conviction: 1.1505
+============================================================
+Rule: {'yogurt'} -> {'rolls/buns', 'bottled water'}
+  Support: 0.0343, Confidence: 0.2963, Lift: 8.2963, Leverage: 0.0302, Conviction: 1.3703
+============================================================
+Rule: {'rolls/buns', 'bottled water'} -> {'yogurt'}
+  Support: 0.0343, Confidence: 0.9600, Lift: 8.2963, Leverage: 0.0302, Conviction: 22.1071
+============================================================
+Rule: {'bottled water', 'yogurt'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 1.1429, Lift: 5.2288, Leverage: 0.0277, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'yogurt'} -> {'bottled water'}
+  Support: 0.0343, Confidence: 1.0909, Lift: 7.9545, Leverage: 0.0300, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns'} -> {'soda', 'yogurt'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 6.1002, Leverage: 0.0287, Conviction: 1.1555
+============================================================
+Rule: {'soda'} -> {'rolls/buns', 'yogurt'}
+  Support: 0.0343, Confidence: 0.2143, Lift: 6.8182, Leverage: 0.0293, Conviction: 1.2327
+============================================================
+Rule: {'yogurt'} -> {'rolls/buns', 'soda'}
+  Support: 0.0343, Confidence: 0.2963, Lift: 6.2851, Leverage: 0.0288, Conviction: 1.3541
+============================================================
+Rule: {'rolls/buns', 'soda'} -> {'yogurt'}
+  Support: 0.0343, Confidence: 0.7273, Lift: 6.2851, Leverage: 0.0288, Conviction: 3.2424
+============================================================
+Rule: {'rolls/buns', 'yogurt'} -> {'soda'}
+  Support: 0.0343, Confidence: 1.0909, Lift: 6.8182, Leverage: 0.0293, Conviction: 1000000.0000
+============================================================
+Rule: {'soda', 'yogurt'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 1.3333, Lift: 6.1002, Leverage: 0.0287, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns'} -> {'sausage', 'yogurt'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 6.4052, Leverage: 0.0253, Conviction: 1.1343
+============================================================
+Rule: {'sausage'} -> {'rolls/buns', 'yogurt'}
+  Support: 0.0300, Confidence: 0.3684, Lift: 11.7225, Leverage: 0.0274, Conviction: 1.5336
+============================================================
+Rule: {'yogurt'} -> {'rolls/buns', 'sausage'}
+  Support: 0.0300, Confidence: 0.2593, Lift: 6.4815, Leverage: 0.0254, Conviction: 1.2960
+============================================================
+Rule: {'rolls/buns', 'sausage'} -> {'yogurt'}
+  Support: 0.0300, Confidence: 0.7500, Lift: 6.4815, Leverage: 0.0254, Conviction: 3.5371
+============================================================
+Rule: {'rolls/buns', 'yogurt'} -> {'sausage'}
+  Support: 0.0300, Confidence: 0.9545, Lift: 11.7225, Leverage: 0.0274, Conviction: 20.2086
+============================================================
+Rule: {'sausage', 'yogurt'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 1.4000, Lift: 6.4052, Leverage: 0.0253, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water'} -> {'soda', 'yogurt'}
+  Support: 0.0300, Confidence: 0.2187, Lift: 8.5069, Leverage: 0.0265, Conviction: 1.2471
+============================================================
+Rule: {'soda'} -> {'bottled water', 'yogurt'}
+  Support: 0.0300, Confidence: 0.1875, Lift: 6.2500, Leverage: 0.0252, Conviction: 1.1938
+============================================================
+Rule: {'yogurt'} -> {'bottled water', 'soda'}
+  Support: 0.0300, Confidence: 0.2593, Lift: 9.0741, Leverage: 0.0267, Conviction: 1.3114
+============================================================
+Rule: {'bottled water', 'soda'} -> {'yogurt'}
+  Support: 0.0300, Confidence: 1.0500, Lift: 9.0741, Leverage: 0.0267, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water', 'yogurt'} -> {'soda'}
+  Support: 0.0300, Confidence: 1.0000, Lift: 6.2500, Leverage: 0.0252, Conviction: 1000000.0000
+============================================================
+Rule: {'soda', 'yogurt'} -> {'bottled water'}
+  Support: 0.0300, Confidence: 1.1667, Lift: 8.5069, Leverage: 0.0265, Conviction: 1000000.0000
+============================================================
+Rule: {'other vegetables'} -> {'whole milk', 'tropical fruit'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 4.5581, Leverage: 0.0234, Conviction: 1.1518
+============================================================
+Rule: {'whole milk'} -> {'other vegetables', 'tropical fruit'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 3.7965, Leverage: 0.0221, Conviction: 1.0998
+============================================================
+Rule: {'tropical fruit'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.3231, Lift: 5.0256, Leverage: 0.0240, Conviction: 1.3823
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'tropical fruit'}
+  Support: 0.0300, Confidence: 0.4667, Lift: 5.0256, Leverage: 0.0240, Conviction: 1.7009
+============================================================
+Rule: {'other vegetables', 'tropical fruit'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 0.9545, Lift: 3.7965, Leverage: 0.0221, Conviction: 16.4686
+============================================================
+Rule: {'whole milk', 'tropical fruit'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 0.8400, Lift: 4.5581, Leverage: 0.0234, Conviction: 5.0982
+============================================================
+Rule: {'root vegetables'} -> {'whole milk', 'tropical fruit'}
+  Support: 0.0386, Confidence: 0.3803, Lift: 10.6479, Leverage: 0.0349, Conviction: 1.5560
+============================================================
+Rule: {'whole milk'} -> {'root vegetables', 'tropical fruit'}
+  Support: 0.0386, Confidence: 0.1534, Lift: 6.3168, Leverage: 0.0325, Conviction: 1.1525
+============================================================
+Rule: {'tropical fruit'} -> {'root vegetables', 'whole milk'}
+  Support: 0.0386, Confidence: 0.4154, Lift: 9.3797, Leverage: 0.0345, Conviction: 1.6348
+============================================================
+Rule: {'root vegetables', 'whole milk'} -> {'tropical fruit'}
+  Support: 0.0386, Confidence: 0.8710, Lift: 9.3797, Leverage: 0.0345, Conviction: 7.0304
+============================================================
+Rule: {'root vegetables', 'tropical fruit'} -> {'whole milk'}
+  Support: 0.0386, Confidence: 1.5882, Lift: 6.3168, Leverage: 0.0325, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'tropical fruit'} -> {'root vegetables'}
+  Support: 0.0386, Confidence: 1.0800, Lift: 10.6479, Leverage: 0.0349, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables'} -> {'other vegetables', 'tropical fruit'}
+  Support: 0.0343, Confidence: 0.3380, Lift: 10.7554, Leverage: 0.0311, Conviction: 1.4632
+============================================================
+Rule: {'other vegetables'} -> {'root vegetables', 'tropical fruit'}
+  Support: 0.0343, Confidence: 0.1860, Lift: 7.6607, Leverage: 0.0298, Conviction: 1.1987
+============================================================
+Rule: {'tropical fruit'} -> {'root vegetables', 'other vegetables'}
+  Support: 0.0343, Confidence: 0.3692, Lift: 8.6154, Leverage: 0.0303, Conviction: 1.5174
+============================================================
+Rule: {'root vegetables', 'other vegetables'} -> {'tropical fruit'}
+  Support: 0.0343, Confidence: 0.8000, Lift: 8.6154, Leverage: 0.0303, Conviction: 4.5357
+============================================================
+Rule: {'root vegetables', 'tropical fruit'} -> {'other vegetables'}
+  Support: 0.0343, Confidence: 1.4118, Lift: 7.6607, Leverage: 0.0298, Conviction: 1000000.0000
+============================================================
+Rule: {'other vegetables', 'tropical fruit'} -> {'root vegetables'}
+  Support: 0.0343, Confidence: 1.0909, Lift: 10.7554, Leverage: 0.0311, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0600, Confidence: 0.2745, Lift: 4.2702, Leverage: 0.0459, Conviction: 1.2898
+============================================================
+Rule: {'other vegetables'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0600, Confidence: 0.3256, Lift: 5.0646, Leverage: 0.0482, Conviction: 1.3874
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'other vegetables'}
+  Support: 0.0600, Confidence: 0.2386, Lift: 5.0620, Leverage: 0.0481, Conviction: 1.2515
+============================================================
+Rule: {'rolls/buns', 'other vegetables'} -> {'whole milk'}
+  Support: 0.0600, Confidence: 1.2727, Lift: 5.0620, Leverage: 0.0481, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'other vegetables'}
+  Support: 0.0600, Confidence: 0.9333, Lift: 5.0646, Leverage: 0.0482, Conviction: 12.2357
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'rolls/buns'}
+  Support: 0.0600, Confidence: 0.9333, Lift: 4.2702, Leverage: 0.0459, Conviction: 11.7214
+============================================================
+Rule: {'bottled water'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0386, Confidence: 0.2812, Lift: 4.3750, Leverage: 0.0298, Conviction: 1.3019
+============================================================
+Rule: {'other vegetables'} -> {'bottled water', 'whole milk'}
+  Support: 0.0386, Confidence: 0.2093, Lift: 6.1047, Leverage: 0.0323, Conviction: 1.2213
+============================================================
+Rule: {'whole milk'} -> {'bottled water', 'other vegetables'}
+  Support: 0.0386, Confidence: 0.1534, Lift: 4.1302, Leverage: 0.0292, Conviction: 1.1373
+============================================================
+Rule: {'bottled water', 'other vegetables'} -> {'whole milk'}
+  Support: 0.0386, Confidence: 1.0385, Lift: 4.1302, Leverage: 0.0292, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water', 'whole milk'} -> {'other vegetables'}
+  Support: 0.0386, Confidence: 1.1250, Lift: 6.1047, Leverage: 0.0323, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'bottled water'}
+  Support: 0.0386, Confidence: 0.6000, Lift: 4.3750, Leverage: 0.0298, Conviction: 2.1571
+============================================================
+Rule: {'soda'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0429, Confidence: 0.2679, Lift: 4.1667, Leverage: 0.0326, Conviction: 1.2780
+============================================================
+Rule: {'other vegetables'} -> {'whole milk', 'soda'}
+  Support: 0.0429, Confidence: 0.2326, Lift: 6.0293, Leverage: 0.0357, Conviction: 1.2528
+============================================================
+Rule: {'whole milk'} -> {'other vegetables', 'soda'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 5.4236, Leverage: 0.0350, Conviction: 1.1676
+============================================================
+Rule: {'other vegetables', 'soda'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 1.3636, Lift: 5.4236, Leverage: 0.0350, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'soda'} -> {'other vegetables'}
+  Support: 0.0429, Confidence: 1.1111, Lift: 6.0293, Leverage: 0.0357, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'soda'}
+  Support: 0.0429, Confidence: 0.6667, Lift: 4.1667, Leverage: 0.0326, Conviction: 2.5200
+============================================================
+Rule: {'sugar'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.7500, Lift: 11.6667, Leverage: 0.0274, Conviction: 3.7429
+============================================================
+Rule: {'other vegetables'} -> {'sugar', 'whole milk'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 9.4961, Leverage: 0.0268, Conviction: 1.1740
+============================================================
+Rule: {'whole milk'} -> {'sugar', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 8.3523, Leverage: 0.0264, Conviction: 1.1193
+============================================================
+Rule: {'sugar', 'other vegetables'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 2.1000, Lift: 8.3523, Leverage: 0.0264, Conviction: 1000000.0000
+============================================================
+Rule: {'sugar', 'whole milk'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 1.7500, Lift: 9.4961, Leverage: 0.0268, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'sugar'}
+  Support: 0.0300, Confidence: 0.4667, Lift: 11.6667, Leverage: 0.0274, Conviction: 1.8000
+============================================================
+Rule: {'root vegetables'} -> {'whole milk', 'other vegetables'}
+  Support: 0.0600, Confidence: 0.5915, Lift: 9.2019, Leverage: 0.0535, Conviction: 2.2909
+============================================================
+Rule: {'other vegetables'} -> {'root vegetables', 'whole milk'}
+  Support: 0.0600, Confidence: 0.3256, Lift: 7.3518, Leverage: 0.0518, Conviction: 1.4171
+============================================================
+Rule: {'whole milk'} -> {'root vegetables', 'other vegetables'}
+  Support: 0.0600, Confidence: 0.2386, Lift: 5.5682, Leverage: 0.0492, Conviction: 1.2571
+============================================================
+Rule: {'root vegetables', 'other vegetables'} -> {'whole milk'}
+  Support: 0.0600, Confidence: 1.4000, Lift: 5.5682, Leverage: 0.0492, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables', 'whole milk'} -> {'other vegetables'}
+  Support: 0.0600, Confidence: 1.3548, Lift: 7.3518, Leverage: 0.0518, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'other vegetables'} -> {'root vegetables'}
+  Support: 0.0600, Confidence: 0.9333, Lift: 9.2019, Leverage: 0.0535, Conviction: 13.4786
+============================================================
+Rule: {'soda'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0386, Confidence: 0.2411, Lift: 3.7500, Leverage: 0.0283, Conviction: 1.2329
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'soda'}
+  Support: 0.0386, Confidence: 0.1765, Lift: 4.5752, Leverage: 0.0301, Conviction: 1.1674
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'soda'}
+  Support: 0.0386, Confidence: 0.1534, Lift: 3.2541, Leverage: 0.0267, Conviction: 1.1255
+============================================================
+Rule: {'rolls/buns', 'soda'} -> {'whole milk'}
+  Support: 0.0386, Confidence: 0.8182, Lift: 3.2541, Leverage: 0.0267, Conviction: 4.1171
+============================================================
+Rule: {'whole milk', 'soda'} -> {'rolls/buns'}
+  Support: 0.0386, Confidence: 1.0000, Lift: 4.5752, Leverage: 0.0301, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'soda'}
+  Support: 0.0386, Confidence: 0.6000, Lift: 3.7500, Leverage: 0.0283, Conviction: 2.1000
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'frankfurter'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 7.3203, Leverage: 0.0296, Conviction: 1.1606
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'frankfurter'}
+  Support: 0.0343, Confidence: 0.1364, Lift: 3.9773, Leverage: 0.0257, Conviction: 1.1182
+============================================================
+Rule: {'frankfurter'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0343, Confidence: 0.5000, Lift: 7.7778, Leverage: 0.0299, Conviction: 1.8714
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'frankfurter'}
+  Support: 0.0343, Confidence: 0.5333, Lift: 7.7778, Leverage: 0.0299, Conviction: 1.9959
+============================================================
+Rule: {'rolls/buns', 'frankfurter'} -> {'whole milk'}
+  Support: 0.0343, Confidence: 1.0000, Lift: 3.9773, Leverage: 0.0257, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'frankfurter'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 1.6000, Lift: 7.3203, Leverage: 0.0296, Conviction: 1000000.0000
+============================================================
+Rule: {'pastry'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0300, Confidence: 0.3889, Lift: 6.0494, Leverage: 0.0250, Conviction: 1.5312
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'pastry'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 6.0049, Leverage: 0.0250, Conviction: 1.1326
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'pastry'}
+  Support: 0.0300, Confidence: 0.1193, Lift: 4.9131, Leverage: 0.0239, Conviction: 1.1079
+============================================================
+Rule: {'rolls/buns', 'pastry'} -> {'whole milk'}
+  Support: 0.0300, Confidence: 1.2353, Lift: 4.9131, Leverage: 0.0239, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'pastry'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 1.3125, Lift: 6.0049, Leverage: 0.0250, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'pastry'}
+  Support: 0.0300, Confidence: 0.4667, Lift: 6.0494, Leverage: 0.0250, Conviction: 1.7304
+============================================================
+Rule: {'rolls/buns'} -> {'whole milk', 'sausage'}
+  Support: 0.0429, Confidence: 0.1961, Lift: 7.2239, Leverage: 0.0369, Conviction: 1.2101
+============================================================
+Rule: {'whole milk'} -> {'rolls/buns', 'sausage'}
+  Support: 0.0429, Confidence: 0.1705, Lift: 4.2614, Leverage: 0.0328, Conviction: 1.1573
+============================================================
+Rule: {'sausage'} -> {'rolls/buns', 'whole milk'}
+  Support: 0.0429, Confidence: 0.5263, Lift: 8.1871, Leverage: 0.0376, Conviction: 1.9754
+============================================================
+Rule: {'rolls/buns', 'whole milk'} -> {'sausage'}
+  Support: 0.0429, Confidence: 0.6667, Lift: 8.1871, Leverage: 0.0376, Conviction: 2.7557
+============================================================
+Rule: {'rolls/buns', 'sausage'} -> {'whole milk'}
+  Support: 0.0429, Confidence: 1.0714, Lift: 4.2614, Leverage: 0.0328, Conviction: 1000000.0000
+============================================================
+Rule: {'whole milk', 'sausage'} -> {'rolls/buns'}
+  Support: 0.0429, Confidence: 1.5789, Lift: 7.2239, Leverage: 0.0369, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water'} -> {'rolls/buns', 'other vegetables'}
+  Support: 0.0386, Confidence: 0.2812, Lift: 5.9659, Leverage: 0.0321, Conviction: 1.3257
+============================================================
+Rule: {'rolls/buns'} -> {'bottled water', 'other vegetables'}
+  Support: 0.0386, Confidence: 0.1765, Lift: 4.7511, Leverage: 0.0305, Conviction: 1.1692
+============================================================
+Rule: {'other vegetables'} -> {'rolls/buns', 'bottled water'}
+  Support: 0.0386, Confidence: 0.2093, Lift: 5.8605, Leverage: 0.0320, Conviction: 1.2195
+============================================================
+Rule: {'rolls/buns', 'bottled water'} -> {'other vegetables'}
+  Support: 0.0386, Confidence: 1.0800, Lift: 5.8605, Leverage: 0.0320, Conviction: 1000000.0000
+============================================================
+Rule: {'bottled water', 'other vegetables'} -> {'rolls/buns'}
+  Support: 0.0386, Confidence: 1.0385, Lift: 4.7511, Leverage: 0.0305, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'other vegetables'} -> {'bottled water'}
+  Support: 0.0386, Confidence: 0.8182, Lift: 5.9659, Leverage: 0.0321, Conviction: 4.7457
+============================================================
+Rule: {'soda'} -> {'rolls/buns', 'other vegetables'}
+  Support: 0.0343, Confidence: 0.2143, Lift: 4.5455, Leverage: 0.0267, Conviction: 1.2127
+============================================================
+Rule: {'rolls/buns'} -> {'other vegetables', 'soda'}
+  Support: 0.0343, Confidence: 0.1569, Lift: 4.9911, Leverage: 0.0274, Conviction: 1.1488
+============================================================
+Rule: {'other vegetables'} -> {'rolls/buns', 'soda'}
+  Support: 0.0343, Confidence: 0.1860, Lift: 3.9464, Leverage: 0.0256, Conviction: 1.1707
+============================================================
+Rule: {'rolls/buns', 'soda'} -> {'other vegetables'}
+  Support: 0.0343, Confidence: 0.7273, Lift: 3.9464, Leverage: 0.0256, Conviction: 2.9910
+============================================================
+Rule: {'other vegetables', 'soda'} -> {'rolls/buns'}
+  Support: 0.0343, Confidence: 1.0909, Lift: 4.9911, Leverage: 0.0274, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'other vegetables'} -> {'soda'}
+  Support: 0.0343, Confidence: 0.7273, Lift: 4.5455, Leverage: 0.0267, Conviction: 3.0800
+============================================================
+Rule: {'root vegetables'} -> {'rolls/buns', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.2958, Lift: 6.2740, Leverage: 0.0252, Conviction: 1.3531
+============================================================
+Rule: {'rolls/buns'} -> {'root vegetables', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 3.2026, Leverage: 0.0206, Conviction: 1.1094
+============================================================
+Rule: {'other vegetables'} -> {'root vegetables', 'rolls/buns'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 6.7031, Leverage: 0.0255, Conviction: 1.1654
+============================================================
+Rule: {'root vegetables', 'rolls/buns'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 1.2353, Lift: 6.7031, Leverage: 0.0255, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables', 'other vegetables'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 0.7000, Lift: 3.2026, Leverage: 0.0206, Conviction: 2.6048
+============================================================
+Rule: {'rolls/buns', 'other vegetables'} -> {'root vegetables'}
+  Support: 0.0300, Confidence: 0.6364, Lift: 6.2740, Leverage: 0.0252, Conviction: 2.4711
+============================================================
+Rule: {'soda'} -> {'bottled water', 'other vegetables'}
+  Support: 0.0300, Confidence: 0.1875, Lift: 5.0481, Leverage: 0.0241, Conviction: 1.1851
+============================================================
+Rule: {'bottled water'} -> {'other vegetables', 'soda'}
+  Support: 0.0300, Confidence: 0.2187, Lift: 6.9602, Leverage: 0.0257, Conviction: 1.2398
+============================================================
+Rule: {'other vegetables'} -> {'bottled water', 'soda'}
+  Support: 0.0300, Confidence: 0.1628, Lift: 5.6977, Leverage: 0.0247, Conviction: 1.1603
+============================================================
+Rule: {'bottled water', 'soda'} -> {'other vegetables'}
+  Support: 0.0300, Confidence: 1.0500, Lift: 5.6977, Leverage: 0.0247, Conviction: 1000000.0000
+============================================================
+Rule: {'other vegetables', 'soda'} -> {'bottled water'}
+  Support: 0.0300, Confidence: 0.9545, Lift: 6.9602, Leverage: 0.0257, Conviction: 18.9829
+============================================================
+Rule: {'bottled water', 'other vegetables'} -> {'soda'}
+  Support: 0.0300, Confidence: 0.8077, Lift: 5.0481, Leverage: 0.0241, Conviction: 4.3680
+============================================================
+Rule: {'rolls/buns'} -> {'soda', 'sausage'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 6.8627, Leverage: 0.0256, Conviction: 1.1359
+============================================================
+Rule: {'soda'} -> {'rolls/buns', 'sausage'}
+  Support: 0.0300, Confidence: 0.1875, Lift: 4.6875, Leverage: 0.0236, Conviction: 1.1815
+============================================================
+Rule: {'sausage'} -> {'rolls/buns', 'soda'}
+  Support: 0.0300, Confidence: 0.3684, Lift: 7.8150, Leverage: 0.0262, Conviction: 1.5087
+============================================================
+Rule: {'rolls/buns', 'soda'} -> {'sausage'}
+  Support: 0.0300, Confidence: 0.6364, Lift: 7.8150, Leverage: 0.0262, Conviction: 2.5261
+============================================================
+Rule: {'rolls/buns', 'sausage'} -> {'soda'}
+  Support: 0.0300, Confidence: 0.7500, Lift: 4.6875, Leverage: 0.0236, Conviction: 3.3600
+============================================================
+Rule: {'soda', 'sausage'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 1.5000, Lift: 6.8627, Leverage: 0.0256, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables'} -> {'rolls/buns', 'sausage'}
+  Support: 0.0300, Confidence: 0.2958, Lift: 7.3944, Leverage: 0.0259, Conviction: 1.3632
+============================================================
+Rule: {'rolls/buns'} -> {'root vegetables', 'sausage'}
+  Support: 0.0300, Confidence: 0.1373, Lift: 10.6754, Leverage: 0.0272, Conviction: 1.1442
+============================================================
+Rule: {'sausage'} -> {'root vegetables', 'rolls/buns'}
+  Support: 0.0300, Confidence: 0.3684, Lift: 15.1703, Leverage: 0.0280, Conviction: 1.5449
+============================================================
+Rule: {'root vegetables', 'rolls/buns'} -> {'sausage'}
+  Support: 0.0300, Confidence: 1.2353, Lift: 15.1703, Leverage: 0.0280, Conviction: 1000000.0000
+============================================================
+Rule: {'root vegetables', 'sausage'} -> {'rolls/buns'}
+  Support: 0.0300, Confidence: 2.3333, Lift: 10.6754, Leverage: 0.0272, Conviction: 1000000.0000
+============================================================
+Rule: {'rolls/buns', 'sausage'} -> {'root vegetables'}
+  Support: 0.0300, Confidence: 0.7500, Lift: 7.3944, Leverage: 0.0259, Conviction: 3.5943
+============================================================
+Top 5 Strongest Rules:
+Antecedent                                         Consequent                                         Lift       Leverage   Conviction
+========================================================================================================================
+sausage                                            root vegetables & rolls/buns                       15.1703    0.0280     1.5449    
+root vegetables & rolls/buns                       sausage                                            15.1703    0.0280     1000000.0000
+fruit/vegetable juice                              whole milk & yogurt                                14.7265    0.0399     2.7477    
+whole milk & yogurt                                fruit/vegetable juice                              14.7265    0.0399     28.9629   
+whole milk & fruit/vegetable juice                 yogurt                                             14.4033    0.0399     1000000.0000
+{'flower (seeds)', 'meat spreads', 'kitchen towels', 'jam', 'soda', 'zwieback', 'pasta', 'pip fruit', 'frozen meals', 'canned fruit', 'pickled vegetables', 'margarine', 'frankfurter', 'brandy', 'instant coffee', 'candy', 'dessert', 'sauces', 'salty snack', 'citrus fruit', 'other vegetables', 'house keeping products', 'root vegetables', 'syrup', 'seasonal products', 'specialty cheese', 'mustard', 'chewing gum', 'fish', 'bottled water', 'ham', 'hard cheese', 'dog food', 'spread cheese', 'chicken', 'soups', 'light bulbs', 'chocolate', 'butter milk', 'canned vegetables', 'meat', 'domestic eggs', 'sausage', 'frozen potato products', 'flower soil/fertilizer', 'frozen dessert', 'liquor (appetizer)', 'rum', 'male cosmetics', 'make up remover', 'rolls/buns', 'canned fish', 'pork', 'spices', 'photo/film', 'butter', 'yogurt', 'sliced cheese', 'flour', 'cocoa drinks', 'soap', 'fruit/vegetable juice', 'vinegar', 'semi-finished bread', 'dish cleaner', 'softener', 'female sanitary products', 'soft cheese', 'curd cheese', 'specialty chocolate', 'red/blush wine', 'ketchup', 'dental care', 'ice cream', 'white wine', 'whole milk', 'coffee', 'abrasive cleaner', 'turkey', 'grapes', 'frozen chicken', 'condensed milk', 'skin care', 'liver loaf', 'honey', 'mayonnaise', 'cling film/bags', 'tropical fruit', 'pastry', 'pot plants', 'beef', 'tea', 'artif. sweetener', 'canned beer', 'cake bar', 'finished products', 'newspapers', 'specialty fat', 'roll products ', 'processed cheese', 'UHT-milk', 'baby cosmetics', 'Instant food products', 'cookware', 'berries', 'salad dressing', 'long life bakery product', 'cleaner', 'potato products', 'shopping bags', 'napkins', 'brown bread', 'candles', 'waffles', 'prosecco', 'pet care', 'sparkling wine', 'cat food', 'cream cheese ', 'chocolate marshmallow', 'white bread', 'bathroom cleaner', 'onions', 'hamburger meat', 'baking powder', 'sweet spreads', 'beverages', 'whipped/sour cream', 'misc. beverages', 'specialty bar', 'frozen vegetables', 'liquor', 'ready soups', 'salt', 'rice', 'packaged fruit/vegetables', 'snack products', 'popcorn', 'oil', 'detergent', 'rubbing alcohol', 'sugar', 'frozen fish', 'bottled beer', 'herbs', 'hair spray', 'hygiene articles', 'curd', 'dishes', 'nut snack', 'cereals', 'organic products'}
+Enter minimum confidence threshold (as a decimal): Top 5 Strongest Rules:
+Antecedent                                         Consequent                                         Lift       Leverage   Conviction
+========================================================================================================================
+sausage                                            root vegetables & rolls/buns                       15.1703    0.0280     1.5449    
+root vegetables & rolls/buns                       sausage                                            15.1703    0.0280     1000000.0000
+fruit/vegetable juice                              whole milk & yogurt                                14.7265    0.0399     2.7477    
+whole milk & yogurt                                fruit/vegetable juice                              14.7265    0.0399     28.9629   
+whole milk & fruit/vegetable juice                 yogurt                                             14.4033    0.0399     1000000.0000
