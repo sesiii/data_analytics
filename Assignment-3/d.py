@@ -145,6 +145,25 @@ class RecommenderEvaluator:
         plt.gca().invert_yaxis()
         plt.show()
 
+    def rmse(self):
+        """Calculate the RMSE for the model."""
+        if self.model is None:
+            raise ValueError("Model needs to be trained first")
+        
+        _, test_sparse = self.prepare_train_test_split()
+        
+        user_factors = self.model.user_factors
+        item_factors = self.model.item_factors
+        
+        predictions = np.dot(user_factors, item_factors.T)
+        
+        test_users, test_items = test_sparse.nonzero()
+        errors = []
+        for user, item in zip(test_users, test_items):
+            errors.append((predictions[user, item] - 1) ** 2)
+        
+        return math.sqrt(np.mean(errors))
+    
     def evaluate_model(self, k=10, sample_size=None):
         """Evaluate the model using all metrics."""
         if self.model is None:
@@ -200,6 +219,12 @@ def main():
     # Visualize top-rated actors for a user
     user_id = 5  # Replace with actual user ID
     evaluator.visualize_top_rated_actors(user_id, k=10)
+
+    # Calculate RMSE
+    rmse = evaluator.rmse()
+
+    print(f"\nRMSE: {rmse:.4f}")
+    
 
 
 
